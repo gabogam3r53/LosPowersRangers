@@ -1,1 +1,13 @@
-Bienvenidos al Proyecto de Samsung
+Bienvenidos al Github del Proyecto de Samsung
+Los comandos basicos para subir archivos desde la terminal son:
+
+git add .               #aca se agrega todos los archivos al stage.
+git commit -m 'mensaje' #aca se hace el commit.
+git push origin master  #aca se envia los cambios realizados en el stage hacia el repositorio de github.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Si no te permite subir archivos al repositorio porque las historias de los commits de tu repositorio local y del repositorio remoto no tienen un origen común entonces debes hacer lo  siguiente:
+
+git pull origin master --allow-unrelated-histories
+
+Se  abrira un editor de texto como Vim o code y debes escribir un mensaje de por qué se está haciendo este merge.
