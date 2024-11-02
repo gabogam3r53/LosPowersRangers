@@ -1,2 +1,2 @@
-# LosPowersRangers
+# PowersRangers
 Unos loquitos aprendiendo python
