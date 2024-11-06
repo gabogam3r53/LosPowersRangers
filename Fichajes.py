@@ -4,7 +4,7 @@ import csv
 import pandas as pd
 
 transferencia = {'Nombre': [], 'Fecha' : []}
-csv_file = 'fichajes_jugadoras.csv'
+csv_file = 'datosTransferencias.csv'
 
 url = 'https://www.365scores.com/es/basketball/player/natasha-howard-95187'
 respuesta = requests.get(url)
