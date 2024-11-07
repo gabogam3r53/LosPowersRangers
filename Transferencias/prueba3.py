@@ -15,14 +15,14 @@ driver = webdriver.Chrome(service=service)
 
 # Función para buscar y extraer la información de la jugadora
 def buscar_jugadora(nombre_jugadora):
-    # Navegar a la página
+    #Pagina a navegar
     url = 'https://www.365scores.com/es'
     driver.get(url)
     
     # Esperar a que el botón de búsqueda esté presente y hacer clic en él
     try:
         boton_buscar = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, '.site-header_search_button__3pJPq'))  # Ajusta el selector según sea necesario
+            EC.element_to_be_clickable((By.CSS_SELECTOR, '.site-header_search_button__3pJPq'))
         )
         boton_buscar.click()
         print("Botón de búsqueda clickeado.")
@@ -30,50 +30,42 @@ def buscar_jugadora(nombre_jugadora):
         print("No se pudo hacer clic en el botón de búsqueda:", e)
         return
     
-    # Esperar a que el campo de búsqueda esté presente, hacer clic y añadir el nombre de la jugadora
+    # Esperar a que el campo de búsqueda esté presente, hacer clic y añade el nombre de la jugadora
     try:
         campo_busqueda = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, '.new-search-widget_input__aoNqC'))  # Ajusta el selector según sea necesario
+            EC.presence_of_element_located((By.CSS_SELECTOR, '.new-search-widget_input__aoNqC'))  
         )
         campo_busqueda.click()
         campo_busqueda.send_keys(nombre_jugadora)
+        time.sleep(2) #Se espera un poco para que cargue la jugadora a buscar
         campo_busqueda.send_keys(Keys.RETURN)  # Simular la tecla Enter
         print(f"Nombre de jugadora '{nombre_jugadora}' ingresado y búsqueda iniciada.")
     except Exception as e:
         print("No se pudo ingresar el nombre de la jugadora:", e)
         return
-    # Esperar hasta que el nombre de la jugadora buscada esté presente y hacer clic en él 
-    # Esperar a que el nombre de la jugadora esté presente en los resultados y obtener el enlace 
-    try: 
-        link_elemento = WebDriverWait(driver, 10).until( 
-            EC.presence_of_element_located((By.CSS_SELECTOR, 'a.new-search-widget_entity_item_intersection__L-eHP link_link__Zkmqt'))
+    try:   
+        link_elemento = WebDriverWait(driver, 10).until(  #Le da click a la jugadora
+            EC.presence_of_element_located((By.CLASS_NAME, 'new-search-widget_entity_item_intersection__L-eHP'))
         )
-        link = link_elemento.get_attribute('href') 
-        print(f"Enlace de la jugadora obtenido: {link}") # Navegar al enlace obtenido 
-        driver.get(link) 
-        a = []
-        for i in link:
-            a.append(i)
-        print(f"Navegando al enlace de la jugadora: {link,a}") 
+        link_elemento.click()
     except Exception as e:
         print(f"No se pudo obtener el enlace o navegar al enlace de la jugadora '{nombre_jugadora}':", e) 
         return
     
+    #Se toma el contenedor que nos interesa y se guarda el html de este
+    list_container = WebDriverWait(driver, 10).until(
+    EC.visibility_of_element_located((By.CLASS_NAME, "list_container__AMVNC"))
+    )
+
+    html_content = list_container.get_attribute('innerHTML')
     
-    # Esperar unos segundos para que el contenido dinámico se cargue
-    driver.implicitly_wait(10)
-    
-    # Obtener el contenido de la página después de cargar el contenido adicional
-    html = driver.page_source
-    soup = BeautifulSoup(html, 'html.parser')
+    # Se pasa el html a la libreria beautifulsoap para analizarlo
+    soup = BeautifulSoup(html_content, 'html.parser')
     
     # Extraer la información de los elementos especificados
-    nombres = soup.find_all('div', class_='ellipsis_container__lF4sf')
-    fechas = soup.find_all('div', class_='athlete-widget_transfer_date__T4ZVD')
-    
-    # Verificar los contenidos obtenidos
-    print("Nombres encontrados:", [nombre.get_text(strip=True) for nombre in nombres])
-    print("Fechas encontradas:", [fecha.get_text(strip=True) for fecha in fechas])
+    nombres = soup.find_all('div', class_='ellipsis_container__ciMmU')
+    fechas = soup.find_all('div', class_='athlete-widget_transfer_date__quLhJ')
+
     
     # Extraer el texto de cada elemento
     nombres_texto = [nombre.get_text(strip=True) for nombre in nombres]
@@ -89,13 +81,14 @@ def buscar_jugadora(nombre_jugadora):
     
     # Imprimir el DataFrame
     print("DataFrame con la información extraída:")
-    print(df)
+    return(df)
 
 # Nombre de la jugadora que deseas buscar
-nombre_jugadora = "Natasha Howard"
+nombre_jugadora = "Alyssa Thomas"
 
 # Llamar a la función para buscar y extraer la información
-buscar_jugadora(nombre_jugadora)
+print(buscar_jugadora(nombre_jugadora))
+
 
 # Cerrar el navegador
 driver.quit()

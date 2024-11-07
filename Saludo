@@ -11,3 +11,11 @@ Si no te permite subir archivos al repositorio porque las historias de los commi
 git pull origin master --allow-unrelated-histories
 
 Se  abrira un editor de texto como Vim o code y debes escribir un mensaje de por qué se está haciendo este merge.
+--------------------------------------------------------------------------------------------------------------------------------------
+Para hacer un alias se usan los siguientes codigos
+nano ~/.bashrc
+alias Nombre_del_Apodo='cd ~/ruta/Del/"directorio para acceder"/mas/rapido'
+#presionas ctrl+O y luego enter, luego ctrl+X
+source ~/.bashrc    #con este codigo  reinicias el bash
+Nombre_del_Apodo   #accedes directamente al sitio
+
