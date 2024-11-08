@@ -31,9 +31,6 @@ for link_nombre,link_monto in zip(links_nombres,links_montos):
     jugadoras['Nombre'].append(separar(link_nombre))
     jugadoras['Contrato'].append(separar(link_monto).strip()[1:])
    
-
-
-#print(jugadoras)
-
 df = pd.DataFrame(jugadoras)
+print(df)
 df.to_csv('datos.csv', index=False)
