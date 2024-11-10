@@ -14,28 +14,62 @@ import numpy as np
 
 #Constantes
 #csv_file = 'data.csv'
-link_jugadoras_precio = 'https://www.spotrac.com/wnba/rankings/player/_/year/2024/sort/contract_value'
+link_jugadoras_precio = ['https://www.spotrac.com/wnba/rankings/player/_/year/2024/sort/contract_value',
+                         'https://www.spotrac.com/wnba/rankings/player/_/year/2023/sort/contract_value',
+                         'https://www.spotrac.com/wnba/rankings/player/_/year/2022/sort/contract_value',
+                         'https://www.spotrac.com/wnba/rankings/player/_/year/2021/sort/contract_value',
+                         'https://www.spotrac.com/wnba/rankings/player/_/year/2020/sort/contract_value']
 
 #Procedimientos iniciales
 # Configurar el controlador de Selenium utilizando WebDriver Manager
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service)
+#service = Service(ChromeDriverManager().install())
+#driver = webdriver.Chrome(service=service)
 
 
 #Funciones
 
-def obtener_jugadoras_y_precio(link):
-    jugadoras = {'Nombre': [], 'Contrato' : []}
+def obtener_nombre_jugadoras(link):
+    jugadoras = {'Nombre': []}
+    r = requests.get(link) #Esto te da el codigo html de la pagina
+    soup = BeautifulSoup(r.text, 'html.parser')
+    links_nombres = soup.findAll('div', class_='link')
+    for link_nombre in links_nombres:
+        jugadoras['Nombre'].append(separar(link_nombre))
+    df = pd.DataFrame(jugadoras)
+    return df
+
+
+def obtener_precio_jugadoras(link,jugadoras, numero_contrato):
+    nueva_columna = 'Contrato {}'.format(numero_contrato)
+    df = {'Nombre' : [] , 'Contrato' : []}
     r = requests.get(link) #Esto te da el codigo html de la pagina
     soup = BeautifulSoup(r.text, 'html.parser')
     links_nombres = soup.findAll('div', class_='link')
     links_montos = soup.findAll('span', class_= 'medium')
     for link_nombre,link_monto in zip(links_nombres,links_montos):
         #if separar(link_nombre) != "A'ja Wilson" and separar(link_nombre) != 'Azurá Stevens' and separar(link_nombre) != 'Stephanie Soares':
-        jugadoras['Nombre'].append(separar(link_nombre))
-        jugadoras['Contrato'].append(int((separar(link_monto).strip()[1:]).replace(",","")))
-    df = pd.DataFrame(jugadoras)
-    return df
+        
+        df['Nombre'].append(separar(link_nombre))
+        df['Contrato'].append(int((separar(link_monto).strip()[1:]).replace(",","")))
+    tamaño = len(jugadoras['Nombre'])
+    
+    if len(df['Contrato']) < len(jugadoras['Nombre']):
+        while len(df['Contrato']) != len(jugadoras['Nombre']):
+            tamaño = len(jugadoras['Nombre'])
+
+            df['Contrato'].append(np.nan)
+            df['Nombre'].append(np.nan)
+    mascara = jugadoras['Nombre'].isin(df['Nombre'])
+    print(len(mascara))
+    print(len(df['Contrato']))
+    #df_datos = pd.DataFrame(df)
+    for nombre, valor in zip(df['Nombre'],df['Contrato']):
+        if nombre in jugadoras['Nombre'].values:
+            jugadoras.loc[jugadoras['Nombre'] == nombre, nueva_columna] = valor
+
+    #print(df_datos)
+    #jugadoras.loc[mascara,nueva_columna] = df_datos['Contrato']
+    return jugadoras
 
 def separar(link):
     link = str(link)
@@ -158,9 +192,17 @@ def añadir_equipo_fecha_fichaje(df):
     df_juntos = pd.concat([df,nuevo_df],axis=1)
     return df_juntos
 
+datos = obtener_nombre_jugadoras(link_jugadoras_precio[0])
+for i in range(len(link_jugadoras_precio)):
+    datos = obtener_precio_jugadoras(link_jugadoras_precio[i],datos,i + 1)
+print(datos)
+datos.to_csv('datos_prueba.csv', index=False, encoding='utf-8-sig')
+
+'''
 data_jugadoras = obtener_jugadoras_y_precio(link_jugadoras_precio)
 data_jugadoras_prueba = data_jugadoras.iloc[0:4]
 
 data_jugadoras_completo = añadir_equipo_fecha_fichaje(data_jugadoras)
 data_jugadoras_completo.to_csv('datos.csv', index=False, encoding='utf-8-sig')
 data_jugadoras_completo.info(verbose=True)
+'''
