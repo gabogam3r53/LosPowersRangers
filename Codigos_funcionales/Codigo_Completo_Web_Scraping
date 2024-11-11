@@ -31,7 +31,6 @@ link_jugadoras_stats = { 2024 : 'https://stats.wnba.com/players/traditional/?sor
 #ervice = Service(ChromeDriverManager().install())
 #driver = webdriver.Chrome(service=service)
 
-#Para Gabriel
 #Funciones
 
 def obtener_nombre_jugadoras(link):
@@ -195,6 +194,7 @@ def añadir_equipo_fecha_fichaje(df):
 
 def get_wnba_stats(link,data_original,año):
     anterior = 0
+    suma = 0
     try:
         options = webdriver.ChromeOptions()
         options.add_argument('--disable-blink-features=AutomationControlled')
@@ -227,11 +227,12 @@ def get_wnba_stats(link,data_original,año):
                     if tipo != 'PLAYER' and tipo != 'RANK':
                         nuevo_dataset[tipo].append(valor.text)
                     else:
-                        if anterior == valor.text:
-                            suma = suma + 1
-                            dato_casilla = str(int(valor.text) + suma)
-                        else:
-                            suma = 0
+                        if tipo == "RANK":
+                            if anterior == valor.text:
+                                suma = suma + 1
+                                dato_casilla = str(int(valor.text) + suma)
+                            else:
+                                suma = 0
                         if dato_casilla not in nuevo_dataset[tipo]:
                             nuevo_dataset[tipo].append(dato_casilla)
                         if tipo == "RANK":
@@ -241,8 +242,6 @@ def get_wnba_stats(link,data_original,año):
                
         
         # Crear DataFrame
-        #nuevo_dataset['RANK'] = set(nuevo_dataset['RANK'])
-        #nuevo_dataset['PLAYER'] = set(nuevo_dataset['PLAYER'])
         nuevas_columnas = {}
 
         for data in nuevo_dataset.keys():
@@ -263,7 +262,7 @@ def get_wnba_stats(link,data_original,año):
                         nombre = '{} {}'.format(data, año)
                         nuevas_columnas[nombre].append(np.nan)
                 else:
-                    print(nuevas_columnas)
+                    print('Hola')
         #print('Se encontraron {} jugadoras', data_original.shape[0] - resta/len(nuevo_dataset.keys()))
         df = pd.DataFrame(nuevas_columnas)
         return df
