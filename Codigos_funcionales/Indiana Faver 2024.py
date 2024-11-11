@@ -17,7 +17,7 @@ def get_wnba_stats():
         driver.get(url)
         time.sleep(15)
         
-        headers = ['PLAYERS', 'GP', 'MIN', 'PTS', 'FGM', 'FGA', 'FG%', '3PM', '3PA', '3P%', 
+        headers = ['RANK' , 'PLAYERS', 'GP', 'MIN', 'PTS', 'FGM', 'FGA', 'FG%', '3PM', '3PA', '3P%', 
                   'FTM', 'FTA', 'FT%', 'OREB', 'DREB', 'REB', 'AST', 'TOV', 'STL', 'BLK', 'PF', '+/-']
         
         rows = []
