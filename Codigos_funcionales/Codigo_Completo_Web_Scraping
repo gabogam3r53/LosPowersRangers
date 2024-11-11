@@ -214,28 +214,47 @@ def get_wnba_stats(link,data_original,año):
                     EC.element_to_be_clickable((By.CSS_SELECTOR, '.stats-table-pagination__next'))
                 )
                 boton_cambiar.click()
-                time.sleep(2)
+                time.sleep(5)
 
             player_elements = driver.find_elements(By.CSS_SELECTOR, "table tbody tr:not(.header)")
             
+
             for row in player_elements:
                 cells = row.find_elements(By.TAG_NAME, "td")
                 for valor,tipo in zip(cells,nuevo_dataset.keys()):
-                    nuevo_dataset[tipo].append(valor.text)
-                #if player_data:
-                #   rows.append(player_data)
+                    if tipo != 'PLAYER' and tipo != 'RANK':
+                        nuevo_dataset[tipo].append(valor.text)
+                    else:
+                        if valor.text not in nuevo_dataset[tipo]:
+                            nuevo_dataset[tipo].append(valor.text)
+
+               
         
         # Crear DataFrame
-        nuevo_dataset['RANK'] = nuevo_dataset['RANK'][:len(nuevo_dataset['+/-'])]
-        nuevo_dataset['PLAYER'] = nuevo_dataset['PLAYER'][:len(nuevo_dataset['+/-'])]
+        #nuevo_dataset['RANK'] = set(nuevo_dataset['RANK'])
+        #nuevo_dataset['PLAYER'] = set(nuevo_dataset['PLAYER'])
+        nuevas_columnas = {}
 
-        for i, player in zip(range(len(nuevo_dataset)),nuevo_dataset['PLAYER']):
-            if player in data_original['Nombre'].values:
-                for data in nuevo_dataset.keys():
-                    nombre = '{} {}'.format(data, año)
-                    data_original.loc[data_original['Nombre'] == player , nombre] = nuevo_dataset[data][i]
-        
-        return data_original
+        for data in nuevo_dataset.keys():
+            if data != 'PLAYER' and data != 'TEAM':
+                nombre = '{} {}'.format(data, año)
+                nuevas_columnas[nombre] = []
+            
+        resta = 0
+        for player in data_original['Nombre']:
+            for data in nuevo_dataset.keys():
+                if data != 'PLAYER' and data != 'TEAM':
+                    if player in nuevo_dataset['PLAYER']:
+                        nombre = '{} {}'.format(data, año)
+                        nuevas_columnas[nombre].append(nuevo_dataset[data][nuevo_dataset['PLAYER'].index(player)])
+
+                    else:
+                        resta = resta + 1
+                        nombre = '{} {}'.format(data, año)
+                        nuevas_columnas[nombre].append(np.nan)
+        #print('Se encontraron {} jugadoras', data_original.shape[0] - resta/len(nuevo_dataset.keys()))
+        df = pd.DataFrame(nuevas_columnas)
+        return df
         
     except Exception as e:
         print(f"Error detallado: {e}")
@@ -253,10 +272,10 @@ for fecha,link in link_jugadoras_precio.items():
     data_jugadoras = obtener_precio_jugadoras(link,data_jugadoras,fecha)
 
 for fecha,link in link_jugadoras_stats.items():
-    data_jugadoras = get_wnba_stats(link,data_jugadoras,fecha)
+    data_jugadoras = pd.concat([data_jugadoras,get_wnba_stats(link,data_jugadoras,fecha)], axis=1)
 
 print(data_jugadoras)
-data_jugadoras.to_csv('datos_prueba.csv', index=False, encoding='utf-8-sig')
+data_jugadoras.to_csv('datos_completos.csv', index=False, encoding='utf-8-sig')
 '''
 data_jugadoras_prueba = data_jugadoras.iloc[0:4]
 
