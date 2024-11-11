@@ -31,7 +31,7 @@ link_jugadoras_stats = { 2024 : 'https://stats.wnba.com/players/traditional/?sor
 #ervice = Service(ChromeDriverManager().install())
 #driver = webdriver.Chrome(service=service)
 
-
+#Para Gabriel
 #Funciones
 
 def obtener_nombre_jugadoras(link):
