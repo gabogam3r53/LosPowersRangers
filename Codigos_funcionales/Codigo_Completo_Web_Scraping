@@ -161,6 +161,6 @@ def añadir_equipo_fecha_fichaje(df):
 data_jugadoras = obtener_jugadoras_y_precio(link_jugadoras_precio)
 data_jugadoras_prueba = data_jugadoras.iloc[0:4]
 
-data_jugadoras_completo = añadir_equipo_fecha_fichaje(data_jugadoras)
+data_jugadoras_completo = añadir_equipo_fecha_fichaje(data_jugadoras_prueba)
 data_jugadoras_completo.to_csv('datos.csv', index=False, encoding='utf-8-sig')
 data_jugadoras_completo.info(verbose=True)
