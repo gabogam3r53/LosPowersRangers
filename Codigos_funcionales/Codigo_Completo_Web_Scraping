@@ -192,6 +192,24 @@ def añadir_equipo_fecha_fichaje(df):
     df_juntos = pd.concat([df,nuevo_df],axis=1)
     return df_juntos
 
+def arreglar_dataframe(data_jugadoras):
+    
+    #Cambiar columnas de nombres por los nuevos nombres con los acentos para que coincidan con la pagina de las estadisticas
+    nombresjugadorasfix = data_jugadoras['Nombre']
+    lista_nombres = nombresjugadorasfix.tolist()
+    #print("\nLista de nombres:", lista_nombres)
+    lista_nombres[7] = 'CHEYENNE PARKER-TYUS'
+    lista_nombres[31] = 'BETNIJAH LANEY-HAMILTON'
+    lista_nombres[75] = 'LOU LOPEZ SÉNÉCHAL'
+    lista_nombres[86] = 'DORKA JUHÁSZL'
+    lista_nombres[114] = 'ASTOU NDOUR-FALL'
+    lista_nombres[135] = 'IVANA DOJKIĆ'
+    lista_nombres[143] = 'OLIVIA ÉPOUPA'
+    return lista_nombres    #returnamos los nuevos nombres
+    
+
+
+
 def get_wnba_stats(link,data_original,año):
     anterior = 0
     suma = 0
@@ -262,7 +280,7 @@ def get_wnba_stats(link,data_original,año):
                         nombre = '{} {}'.format(data, año)
                         nuevas_columnas[nombre].append(np.nan)
                 else:
-                    print('Hola')
+                    #print('Hola')
         #print('Se encontraron {} jugadoras', data_original.shape[0] - resta/len(nuevo_dataset.keys()))
         df = pd.DataFrame(nuevas_columnas)
         return df
@@ -282,11 +300,16 @@ data_jugadoras = obtener_nombre_jugadoras(link_jugadoras_precio[2024])
 for fecha,link in link_jugadoras_precio.items():
     data_jugadoras = obtener_precio_jugadoras(link,data_jugadoras,fecha)
 
+
+data_jugadoras['Nombre'] = arreglar_dataframe(data_jugadoras) #sustituimos la nueva lista en el dataframe
+
 for fecha,link in link_jugadoras_stats.items():
     data_jugadoras = pd.concat([data_jugadoras,get_wnba_stats(link,data_jugadoras,fecha)], axis=1)
 
 print(data_jugadoras)
 data_jugadoras.to_csv('datos_completos.csv', index=False, encoding='utf-8-sig')
+
+#data_jugadoras.info()
 '''
 data_jugadoras_prueba = data_jugadoras.iloc[0:4]
 
