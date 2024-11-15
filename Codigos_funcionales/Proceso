@@ -1,0 +1,425 @@
+2024-11-14 20:33:35,796 - INFO - Funcion get_wnba_stats completada
+2024-11-14 20:33:35,797 - INFO - Iniciando obtencion de nombres de jugadoras
+2024-11-14 20:33:37,575 - INFO - Nombres de jugadoras obtenidos exitosamente
+2024-11-14 20:33:37,583 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2024/sort/contract_value
+2024-11-14 20:33:40,196 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2023/sort/contract_value
+2024-11-14 20:33:42,372 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2022/sort/contract_value
+2024-11-14 20:33:44,591 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2021/sort/contract_value
+2024-11-14 20:33:46,484 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2020/sort/contract_value
+2024-11-14 20:34:34,478 - INFO - Funcion get_wnba_stats completada
+2024-11-14 20:34:34,479 - INFO - Iniciando obtencion de nombres de jugadoras
+2024-11-14 20:34:36,261 - INFO - Nombres de jugadoras obtenidos exitosamente
+2024-11-14 20:34:36,270 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2024/sort/contract_value
+2024-11-14 20:34:38,439 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2023/sort/contract_value
+2024-11-14 20:34:40,934 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2022/sort/contract_value
+2024-11-14 20:34:43,195 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2021/sort/contract_value
+2024-11-14 20:34:45,703 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2020/sort/contract_value
+2024-11-14 20:34:48,150 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2024&SeasonType=Regular%20Season
+2024-11-14 20:34:48,151 - INFO - ====== WebDriver manager ======
+2024-11-14 20:34:52,541 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:34:53,032 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:34:53,442 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 20:34:54,807 - INFO - Inicializando navegador...
+2024-11-14 20:35:12,891 - INFO - Obteniendo numero de paginas...
+2024-11-14 20:35:12,957 - INFO - Total de paginas: 4
+2024-11-14 20:35:12,998 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:36:06,456 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 20:36:12,211 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:37:02,549 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 20:37:07,877 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:38:04,022 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 20:38:09,283 - INFO - Encontradas 14 filas de jugadores en esta pagina
+2024-11-14 20:38:14,923 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 20:38:14,933 - INFO - Se encontraron 107.46666666666667 jugadoras
+2024-11-14 20:38:14,934 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 20:38:14,934 - INFO - Cerrando el navegador...
+2024-11-14 20:38:21,548 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2023&SeasonType=Regular%20Season
+2024-11-14 20:38:21,549 - INFO - ====== WebDriver manager ======
+2024-11-14 20:38:26,056 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:38:26,253 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:38:26,451 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 20:38:27,757 - INFO - Inicializando navegador...
+2024-11-14 20:38:43,626 - INFO - Obteniendo numero de paginas...
+2024-11-14 20:38:43,703 - INFO - Total de paginas: 4
+2024-11-14 20:38:43,733 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:39:31,886 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 20:39:37,250 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:40:25,928 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 20:40:31,239 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:41:22,849 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 20:41:28,115 - INFO - Encontradas 12 filas de jugadores en esta pagina
+2024-11-14 20:41:34,592 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 20:41:34,601 - INFO - Se encontraron 119.6 jugadoras
+2024-11-14 20:41:34,603 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 20:41:34,603 - INFO - Cerrando el navegador...
+2024-11-14 20:41:40,915 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2022&SeasonType=Regular%20Season
+2024-11-14 20:41:40,915 - INFO - ====== WebDriver manager ======
+2024-11-14 20:41:45,591 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:41:45,801 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:41:46,046 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 20:41:47,432 - INFO - Inicializando navegador...
+2024-11-14 20:42:05,577 - INFO - Obteniendo numero de paginas...
+2024-11-14 20:42:05,643 - INFO - Total de paginas: 4
+2024-11-14 20:42:05,706 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:42:59,448 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 20:43:05,074 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:43:52,735 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 20:43:58,315 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:44:33,850 - INFO - Funcion get_wnba_stats completada
+2024-11-14 20:44:33,852 - INFO - Iniciando obtencion de nombres de jugadoras
+2024-11-14 20:44:35,624 - INFO - Nombres de jugadoras obtenidos exitosamente
+2024-11-14 20:44:35,626 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2024/sort/contract_value
+2024-11-14 20:44:37,662 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2023/sort/contract_value
+2024-11-14 20:44:39,923 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2022/sort/contract_value
+2024-11-14 20:44:42,153 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2021/sort/contract_value
+2024-11-14 20:44:44,519 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2020/sort/contract_value
+2024-11-14 20:44:46,701 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2024&SeasonType=Regular%20Season
+2024-11-14 20:44:46,702 - INFO - ====== WebDriver manager ======
+2024-11-14 20:44:50,915 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:44:51,275 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:44:51,583 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 20:44:52,962 - INFO - Inicializando navegador...
+2024-11-14 20:45:11,602 - INFO - Obteniendo numero de paginas...
+2024-11-14 20:45:11,649 - INFO - Total de paginas: 4
+2024-11-14 20:45:11,677 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:45:51,477 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 20:45:57,096 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:46:37,226 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 20:46:42,578 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:47:12,127 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 20:47:17,265 - INFO - Encontradas 14 filas de jugadores en esta pagina
+2024-11-14 20:47:21,500 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 20:47:21,510 - INFO - Se encontraron 107.46666666666667 jugadoras
+2024-11-14 20:47:21,511 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 20:47:21,511 - INFO - Cerrando el navegador...
+2024-11-14 20:47:27,870 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2023&SeasonType=Regular%20Season
+2024-11-14 20:47:27,870 - INFO - ====== WebDriver manager ======
+2024-11-14 20:47:31,959 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:47:32,233 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:47:32,436 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 20:47:33,745 - INFO - Inicializando navegador...
+2024-11-14 20:47:52,542 - INFO - Obteniendo numero de paginas...
+2024-11-14 20:47:52,599 - INFO - Total de paginas: 4
+2024-11-14 20:47:52,630 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:48:32,853 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 20:48:38,190 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:49:15,310 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 20:49:20,638 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:49:58,018 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 20:49:59,135 - ERROR - Error en get_wnba_stats: Message: element click intercepted: Element <a class="stats-table-pagination__next" href="" alt="Next Page" ng-click="nav(1)">...</a> is not clickable at point (989, 21). Other element would receive the click: <a class="stats-search__icon" tabindex="0" ng-click="toggleSearch();" ng-keyup="$event.keyCode == 13 ? toggleSearch() : null">...</a>
+  (Session info: chrome=130.0.6723.117)
+Stacktrace:
+	GetHandleVerifier [0x00C6EBD3+24307]
+	(No symbol) [0x00BF8D74]
+	(No symbol) [0x00ADC323]
+	(No symbol) [0x00B23B07]
+	(No symbol) [0x00B21F79]
+	(No symbol) [0x00B1FE64]
+	(No symbol) [0x00B1F45E]
+	(No symbol) [0x00B1415D]
+	(No symbol) [0x00B3FE8C]
+	(No symbol) [0x00B13C14]
+	(No symbol) [0x00B40124]
+	(No symbol) [0x00B59579]
+	(No symbol) [0x00B3FC26]
+	(No symbol) [0x00B1219C]
+	(No symbol) [0x00B1311D]
+	GetHandleVerifier [0x00F18D93+2818227]
+	GetHandleVerifier [0x00F7542E+3196750]
+	GetHandleVerifier [0x00F6D9D2+3165426]
+	GetHandleVerifier [0x00D0DA70+675216]
+	(No symbol) [0x00C01B3D]
+	(No symbol) [0x00BFEA18]
+	(No symbol) [0x00BFEBB5]
+	(No symbol) [0x00BF1640]
+	BaseThreadInitThunk [0x759C7BA9+25]
+	RtlInitializeExceptionChain [0x77D8C0CB+107]
+	RtlClearBits [0x77D8C04F+191]
+
+2024-11-14 20:49:59,283 - INFO - Cerrando el navegador...
+2024-11-14 20:50:05,639 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2022&SeasonType=Regular%20Season
+2024-11-14 20:50:05,639 - INFO - ====== WebDriver manager ======
+2024-11-14 20:50:09,798 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:50:10,033 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:50:10,210 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 20:50:11,505 - INFO - Inicializando navegador...
+2024-11-14 20:50:29,525 - INFO - Obteniendo numero de paginas...
+2024-11-14 20:50:29,573 - INFO - Total de paginas: 4
+2024-11-14 20:50:29,599 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:51:12,925 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 20:51:18,562 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:52:06,155 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 20:52:11,796 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:53:00,224 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 20:53:01,394 - ERROR - Error en get_wnba_stats: Message: element click intercepted: Element <a class="stats-table-pagination__next" href="" alt="Next Page" ng-click="nav(1)">...</a> is not clickable at point (989, 12). Other element would receive the click: <wnba-nav></wnba-nav>
+  (Session info: chrome=130.0.6723.117)
+Stacktrace:
+	GetHandleVerifier [0x00C6EBD3+24307]
+	(No symbol) [0x00BF8D74]
+	(No symbol) [0x00ADC323]
+	(No symbol) [0x00B23B07]
+	(No symbol) [0x00B21F79]
+	(No symbol) [0x00B1FE64]
+	(No symbol) [0x00B1F45E]
+	(No symbol) [0x00B1415D]
+	(No symbol) [0x00B3FE8C]
+	(No symbol) [0x00B13C14]
+	(No symbol) [0x00B40124]
+	(No symbol) [0x00B59579]
+	(No symbol) [0x00B3FC26]
+	(No symbol) [0x00B1219C]
+	(No symbol) [0x00B1311D]
+	GetHandleVerifier [0x00F18D93+2818227]
+	GetHandleVerifier [0x00F7542E+3196750]
+	GetHandleVerifier [0x00F6D9D2+3165426]
+	GetHandleVerifier [0x00D0DA70+675216]
+	(No symbol) [0x00C01B3D]
+	(No symbol) [0x00BFEA18]
+	(No symbol) [0x00BFEBB5]
+	(No symbol) [0x00BF1640]
+	BaseThreadInitThunk [0x759C7BA9+25]
+	RtlInitializeExceptionChain [0x77D8C0CB+107]
+	RtlClearBits [0x77D8C04F+191]
+
+2024-11-14 20:53:01,532 - INFO - Cerrando el navegador...
+2024-11-14 20:53:07,997 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2021&SeasonType=Regular%20Season
+2024-11-14 20:53:07,997 - INFO - ====== WebDriver manager ======
+2024-11-14 20:53:12,263 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:53:12,475 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:53:12,641 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 20:53:13,915 - INFO - Inicializando navegador...
+2024-11-14 20:53:32,405 - INFO - Obteniendo numero de paginas...
+2024-11-14 20:53:32,462 - INFO - Total de paginas: 4
+2024-11-14 20:53:32,515 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:54:13,131 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 20:54:18,451 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:54:58,415 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 20:55:03,739 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:55:38,225 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 20:55:43,371 - INFO - Encontradas 10 filas de jugadores en esta pagina
+2024-11-14 20:55:47,437 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 20:55:47,446 - INFO - Se encontraron 93.46666666666667 jugadoras
+2024-11-14 20:55:47,447 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 20:55:47,447 - INFO - Cerrando el navegador...
+2024-11-14 20:55:53,810 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2020&SeasonType=Regular%20Season
+2024-11-14 20:55:53,810 - INFO - ====== WebDriver manager ======
+2024-11-14 20:55:57,868 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:55:58,111 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 20:55:58,322 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 20:55:59,607 - INFO - Inicializando navegador...
+2024-11-14 20:56:17,844 - INFO - Obteniendo numero de paginas...
+2024-11-14 20:56:17,892 - INFO - Total de paginas: 3
+2024-11-14 20:56:17,925 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:56:58,027 - INFO - Cambiando a pagina 2 de 3
+2024-11-14 20:57:03,358 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 20:57:43,777 - INFO - Cambiando a pagina 3 de 3
+2024-11-14 20:57:49,065 - INFO - Encontradas 90 filas de jugadores en esta pagina
+2024-11-14 20:58:25,043 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 20:58:25,060 - INFO - Se encontraron 83.2 jugadoras
+2024-11-14 20:58:25,062 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 20:58:25,063 - INFO - Cerrando el navegador...
+2024-11-14 20:58:31,637 - INFO - Inicializacion de datos completada
+2024-11-14 21:14:35,618 - INFO - Funcion get_wnba_stats completada
+2024-11-14 21:14:35,618 - INFO - Iniciando obtencion de nombres de jugadoras
+2024-11-14 21:14:37,600 - INFO - Nombres de jugadoras obtenidos exitosamente
+2024-11-14 21:14:37,601 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2024/sort/contract_value
+2024-11-14 21:14:39,367 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2023/sort/contract_value
+2024-11-14 21:14:41,489 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2022/sort/contract_value
+2024-11-14 21:14:43,585 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2021/sort/contract_value
+2024-11-14 21:14:45,766 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2020/sort/contract_value
+2024-11-14 21:14:48,051 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2024&SeasonType=Regular%20Season
+2024-11-14 21:14:48,051 - INFO - ====== WebDriver manager ======
+2024-11-14 21:14:52,306 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:14:52,668 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:14:52,917 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 21:14:54,264 - INFO - Inicializando navegador...
+2024-11-14 21:15:12,051 - INFO - Obteniendo numero de paginas...
+2024-11-14 21:15:12,105 - INFO - Total de paginas: 4
+2024-11-14 21:15:12,133 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:15:52,245 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 21:15:57,622 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:16:38,503 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 21:16:43,837 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:17:24,214 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 21:17:29,405 - INFO - Encontradas 14 filas de jugadores en esta pagina
+2024-11-14 21:17:35,399 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 21:17:35,420 - INFO - Se encontraron 142.4 jugadoras
+2024-11-14 21:17:35,423 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 21:17:35,424 - INFO - Cerrando el navegador...
+2024-11-14 21:17:41,900 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2023&SeasonType=Regular%20Season
+2024-11-14 21:17:41,901 - INFO - ====== WebDriver manager ======
+2024-11-14 21:17:46,285 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:17:46,459 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:17:46,697 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 21:17:48,042 - INFO - Inicializando navegador...
+2024-11-14 21:18:06,494 - INFO - Obteniendo numero de paginas...
+2024-11-14 21:18:06,551 - INFO - Total de paginas: 4
+2024-11-14 21:18:06,583 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:18:46,410 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 21:18:51,750 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:19:34,215 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 21:19:39,560 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:20:20,444 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 21:20:25,643 - INFO - Encontradas 12 filas de jugadores en esta pagina
+2024-11-14 21:20:30,541 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 21:20:30,560 - INFO - Se encontraron 108.8 jugadoras
+2024-11-14 21:20:30,563 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 21:20:30,563 - INFO - Cerrando el navegador...
+2024-11-14 21:20:36,963 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2022&SeasonType=Regular%20Season
+2024-11-14 21:20:36,964 - INFO - ====== WebDriver manager ======
+2024-11-14 21:20:41,221 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:20:41,397 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:20:41,649 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 21:20:42,973 - INFO - Inicializando navegador...
+2024-11-14 21:21:00,828 - INFO - Obteniendo numero de paginas...
+2024-11-14 21:21:00,879 - INFO - Total de paginas: 4
+2024-11-14 21:21:00,909 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:21:41,076 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 21:21:46,412 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:22:26,052 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 21:22:31,369 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:23:11,723 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 21:23:16,916 - INFO - Encontradas 32 filas de jugadores en esta pagina
+2024-11-14 21:23:29,509 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 21:23:29,528 - INFO - Se encontraron 104.13333333333333 jugadoras
+2024-11-14 21:23:29,531 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 21:23:29,531 - INFO - Cerrando el navegador...
+2024-11-14 21:23:36,004 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2021&SeasonType=Regular%20Season
+2024-11-14 21:23:36,005 - INFO - ====== WebDriver manager ======
+2024-11-14 21:23:40,150 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:23:40,379 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:23:40,583 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 21:23:41,937 - INFO - Inicializando navegador...
+2024-11-14 21:24:01,384 - INFO - Obteniendo numero de paginas...
+2024-11-14 21:24:01,439 - INFO - Total de paginas: 4
+2024-11-14 21:24:01,466 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:24:47,403 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 21:24:52,839 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:25:55,412 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 21:26:00,831 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:27:05,653 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 21:27:10,880 - INFO - Encontradas 10 filas de jugadores en esta pagina
+2024-11-14 21:27:17,726 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 21:27:17,745 - INFO - Se encontraron 90.13333333333333 jugadoras
+2024-11-14 21:27:17,747 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 21:27:17,747 - INFO - Cerrando el navegador...
+2024-11-14 21:27:24,129 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2020&SeasonType=Regular%20Season
+2024-11-14 21:27:24,129 - INFO - ====== WebDriver manager ======
+2024-11-14 21:27:28,330 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:27:28,598 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:27:28,851 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 21:27:30,154 - INFO - Inicializando navegador...
+2024-11-14 21:27:48,828 - INFO - Obteniendo numero de paginas...
+2024-11-14 21:27:48,883 - INFO - Total de paginas: 3
+2024-11-14 21:27:48,916 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:28:48,204 - INFO - Cambiando a pagina 2 de 3
+2024-11-14 21:28:53,615 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:29:56,556 - INFO - Cambiando a pagina 3 de 3
+2024-11-14 21:30:01,914 - INFO - Encontradas 90 filas de jugadores en esta pagina
+2024-11-14 21:30:57,771 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 21:30:57,802 - INFO - Se encontraron 80.8 jugadoras
+2024-11-14 21:30:57,806 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 21:30:57,806 - INFO - Cerrando el navegador...
+2024-11-14 21:31:04,430 - INFO - Inicializacion de datos completada
+2024-11-14 21:37:39,207 - INFO - Funcion get_wnba_stats completada
+2024-11-14 21:37:39,208 - INFO - Iniciando obtencion de nombres de jugadoras
+2024-11-14 21:37:40,998 - INFO - Nombres de jugadoras obtenidos exitosamente
+2024-11-14 21:37:41,000 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2024/sort/contract_value
+2024-11-14 21:37:43,057 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2023/sort/contract_value
+2024-11-14 21:37:45,399 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2022/sort/contract_value
+2024-11-14 21:37:47,818 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2021/sort/contract_value
+2024-11-14 21:37:50,147 - INFO - Iniciando obtencion de precios de jugadoras desde https://www.spotrac.com/wnba/rankings/player/_/year/2020/sort/contract_value
+2024-11-14 21:37:52,544 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2024&SeasonType=Regular%20Season
+2024-11-14 21:37:52,545 - INFO - ====== WebDriver manager ======
+2024-11-14 21:37:57,224 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:37:57,685 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:37:58,000 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 21:37:59,382 - INFO - Inicializando navegador...
+2024-11-14 21:38:17,205 - INFO - Obteniendo numero de paginas...
+2024-11-14 21:38:17,304 - INFO - Total de paginas: 4
+2024-11-14 21:38:17,346 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:39:20,331 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 21:39:25,978 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:40:28,815 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 21:40:34,425 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:41:27,641 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 21:41:32,819 - INFO - Encontradas 14 filas de jugadores en esta pagina
+2024-11-14 21:41:38,626 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 21:41:38,636 - INFO - Se encontraron 107.46666666666667 jugadoras
+2024-11-14 21:41:38,637 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 21:41:38,638 - INFO - Cerrando el navegador...
+2024-11-14 21:41:44,948 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2023&SeasonType=Regular%20Season
+2024-11-14 21:41:44,949 - INFO - ====== WebDriver manager ======
+2024-11-14 21:41:49,193 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:41:49,454 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:41:49,664 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 21:41:51,062 - INFO - Inicializando navegador...
+2024-11-14 21:42:08,759 - INFO - Obteniendo numero de paginas...
+2024-11-14 21:42:08,814 - INFO - Total de paginas: 4
+2024-11-14 21:42:08,867 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:42:49,975 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 21:42:55,353 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:43:37,186 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 21:43:42,524 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:44:23,570 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 21:44:28,749 - INFO - Encontradas 12 filas de jugadores en esta pagina
+2024-11-14 21:44:33,908 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 21:44:33,917 - INFO - Se encontraron 119.6 jugadoras
+2024-11-14 21:44:33,918 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 21:44:33,918 - INFO - Cerrando el navegador...
+2024-11-14 21:44:40,221 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2022&SeasonType=Regular%20Season
+2024-11-14 21:44:40,221 - INFO - ====== WebDriver manager ======
+2024-11-14 21:44:44,237 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:44:44,442 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:44:44,652 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 21:44:45,939 - INFO - Inicializando navegador...
+2024-11-14 21:45:03,621 - INFO - Obteniendo numero de paginas...
+2024-11-14 21:45:03,681 - INFO - Total de paginas: 4
+2024-11-14 21:45:03,704 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:45:45,010 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 21:45:50,370 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:46:31,235 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 21:46:36,617 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:47:23,570 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 21:47:28,939 - INFO - Encontradas 32 filas de jugadores en esta pagina
+2024-11-14 21:47:46,086 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 21:47:46,096 - INFO - Se encontraron 106.53333333333333 jugadoras
+2024-11-14 21:47:46,098 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 21:47:46,098 - INFO - Cerrando el navegador...
+2024-11-14 21:47:52,387 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2021&SeasonType=Regular%20Season
+2024-11-14 21:47:52,388 - INFO - ====== WebDriver manager ======
+2024-11-14 21:47:56,791 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:47:57,004 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:47:57,207 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 21:47:58,541 - INFO - Inicializando navegador...
+2024-11-14 21:48:16,216 - INFO - Obteniendo numero de paginas...
+2024-11-14 21:48:16,289 - INFO - Total de paginas: 4
+2024-11-14 21:48:16,330 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:49:08,227 - INFO - Cambiando a pagina 2 de 4
+2024-11-14 21:49:13,740 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:49:59,145 - INFO - Cambiando a pagina 3 de 4
+2024-11-14 21:50:04,575 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:50:54,922 - INFO - Cambiando a pagina 4 de 4
+2024-11-14 21:51:00,102 - INFO - Encontradas 10 filas de jugadores en esta pagina
+2024-11-14 21:51:04,599 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 21:51:04,610 - INFO - Se encontraron 93.46666666666667 jugadoras
+2024-11-14 21:51:04,611 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 21:51:04,612 - INFO - Cerrando el navegador...
+2024-11-14 21:51:10,894 - INFO - Iniciando funcion get_wnba_stats con link: https://stats.wnba.com/players/traditional/?sort=PTS&dir=-1&Season=2020&SeasonType=Regular%20Season
+2024-11-14 21:51:10,894 - INFO - ====== WebDriver manager ======
+2024-11-14 21:51:15,089 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:51:15,359 - INFO - Get LATEST chromedriver version for google-chrome
+2024-11-14 21:51:15,533 - INFO - Driver [C:\Users\gabog\.wdm\drivers\chromedriver\win64\130.0.6723.116\chromedriver-win32/chromedriver.exe] found in cache
+2024-11-14 21:51:16,949 - INFO - Inicializando navegador...
+2024-11-14 21:51:34,913 - INFO - Obteniendo numero de paginas...
+2024-11-14 21:51:34,971 - INFO - Total de paginas: 3
+2024-11-14 21:51:35,000 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:52:23,483 - INFO - Cambiando a pagina 2 de 3
+2024-11-14 21:52:28,842 - INFO - Encontradas 100 filas de jugadores en esta pagina
+2024-11-14 21:53:19,326 - INFO - Cambiando a pagina 3 de 3
+2024-11-14 21:53:24,627 - INFO - Encontradas 90 filas de jugadores en esta pagina
+2024-11-14 21:54:09,958 - INFO - Creando DataFrame con las nuevas columnas...
+2024-11-14 21:54:09,968 - INFO - Se encontraron 83.2 jugadoras
+2024-11-14 21:54:09,969 - INFO - Funcion get_wnba_stats completada exitosamente.
+2024-11-14 21:54:09,969 - INFO - Cerrando el navegador...
+2024-11-14 21:54:16,476 - INFO - Inicializacion de datos completada

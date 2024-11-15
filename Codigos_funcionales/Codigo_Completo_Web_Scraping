@@ -252,11 +252,9 @@ def arreglar_dataframe(data_jugadoras):
     lista_nombres[86] = 'DORKA JUHÁSZL'
     lista_nombres[114] = 'ASTOU NDOUR-FALL'
     lista_nombres[135] = 'IVANA DOJKIĆ'
-    lista_nombres[143] = 'OLIVIA ÉPOUPA'
+    #lista_nombres[143] = 'OLIVIA ÉPOUPA'
     return lista_nombres    #returnamos los nuevos nombres
     
-
-
 
 def get_wnba_stats(link,data_original,año):
     logging.info(f"Iniciando funcion get_wnba_stats con link: {link}")
@@ -352,7 +350,7 @@ def get_wnba_stats(link,data_original,año):
 
 logging.info("Funcion get_wnba_stats completada")
 
-data_jugadoras = obtener_nombre_jugadoras(link_jugadoras_precio[2024])
+data_jugadoras = obtener_nombre_jugadoras(link_jugadoras_precio[2023])
 for fecha,link in link_jugadoras_precio.items():
     data_jugadoras = obtener_precio_jugadoras(link,data_jugadoras,fecha)
 
@@ -363,7 +361,7 @@ for fecha,link in link_jugadoras_stats.items():
     data_jugadoras = pd.concat([data_jugadoras,get_wnba_stats(link,data_jugadoras,fecha)], axis=1)
 
 print(data_jugadoras)
-data_jugadoras.to_csv('datos_completos.csv', index=False, encoding='utf-8-sig')
+data_jugadoras.to_csv('datos_completos_fd.csv', index=False, encoding='utf-8-sig')
 
 #data_jugadoras.info()
 '''
@@ -428,3 +426,6 @@ def main():
     logging.info("Proceso terminado")
 if __name__ == "__main__":
     main()
+
+#salir del driver
+driver.quit
