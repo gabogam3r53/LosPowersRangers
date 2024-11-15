@@ -381,7 +381,7 @@ def check_data_update():
     
     if current_time.hour == 0 and current_time.minute == 0:
         logging.info("Hora de actualizacion. Proceso comenzando...")
-        data_jugadoras = obtener_nombre_jugadoras(link_jugadoras_precio[2024])
+        data_jugadoras = obtener_nombre_jugadoras(link_jugadoras_precio[2023])
         for fecha, link in link_jugadoras_precio.items():
             logging.info(f"Actualizando datos para fecha: {fecha}")
             data_jugadoras = obtener_precio_jugadoras(link, data_jugadoras, fecha)
@@ -411,7 +411,7 @@ def main():
 
     if data_jugadoras is None:
         logging.info("Inicializando datos de jugadoras por primera vez")
-        data_jugadoras = obtener_nombre_jugadoras(link_jugadoras_precio[2024])
+        data_jugadoras = obtener_nombre_jugadoras(link_jugadoras_precio[2023])
         for fecha, link in link_jugadoras_precio.items():
             logging.info(f"Actualizando datos para fecha: {fecha}")
             data_jugadoras = obtener_precio_jugadoras(link, data_jugadoras, fecha)
