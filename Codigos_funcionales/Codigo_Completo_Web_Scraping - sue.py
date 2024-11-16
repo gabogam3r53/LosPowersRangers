@@ -359,9 +359,13 @@ def get_wnba_stats(link,data_original,año):
             driver.quit()
             logging.info("Funcion get_wnba_stats completada")
 
+sue = { 'Nombre': ['Sue Bird']}
+sue = pd.DataFrame(sue)
+
 data_jugadoras = obtener_nombre_jugadoras(link_jugadoras_precio[2023])
 for fecha,link in link_jugadoras_precio.items():
-    data_jugadoras = obtener_precio_jugadoras(link,data_jugadoras,fecha)
+    data_jugadoras = obtener_precio_jugadoras(link,sue,fecha)
+
 
 data_jugadoras['Nombre'] = arreglar_dataframe(data_jugadoras) #sustituimos la nueva lista en el dataframe
 
@@ -369,7 +373,7 @@ for fecha,link in link_jugadoras_stats.items():
     data_jugadoras = pd.concat([data_jugadoras,get_wnba_stats(link,data_jugadoras,fecha)], axis=1)
 
 print(data_jugadoras)
-data_jugadoras.to_csv('datos_completos_sou.csv', index=False, encoding='utf-8-sig')
+data_jugadoras.to_csv('datos_completos_fd.csv', index=False, encoding='utf-8-sig')
 
 #data_jugadoras.info()
 '''
