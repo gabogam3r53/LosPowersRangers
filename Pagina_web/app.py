@@ -5,9 +5,9 @@ from io import BytesIO
 from PIL import Image
 
 # URLs de los archivos y gráficos
-url_datos = 'https://github.com/gabogam3r53/PowersRangers/raw/develop/Codigos_funcionales/Datos_estadisticas_jugadorasFix_excel.xlsx'
+url_datos = 'https://github.com/gabogam3r53/PowersRangers/raw/develop/Datos/datos_todas_las_jugadoras_posibles.xlsx'
 url_grafica_contrato = 'https://github.com/gabogam3r53/PowersRangers/raw/develop/Analisis_Datos/Graficas/Contratos_contra_estadisticas_interesantes_todos_mas_datos.png'
-dir_graficas_individuales = 'https://github.com/gabogam3r53/PowersRangers/blob/develop/Analisis_Datos/Graficas/Graficas_datos_individuales/'
+dir_graficas_individuales = 'https://raw.githubusercontent.com/gabogam3r53/PowersRangers/refs/heads/develop/Analisis_Datos/Graficas/Graficas_datos_individuales/'
 dir_graficas_por_ano = 'https://raw.githubusercontent.com/gabogam3r53/PowersRangers/refs/heads/develop/Analisis_Datos/Graficas/Graficas_datos_liga_por_a%C3%B1o/'
 
 # Cargar datos de Excel
