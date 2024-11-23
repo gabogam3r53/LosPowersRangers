@@ -22,19 +22,20 @@ def main():
     # Leyenda
     abbrev = pd.DataFrame.from_dict(ABBREVS_WNBA, orient='index', columns=['Meaning'])
 
-    st.markdown("""
+    # Apply CSS styles directly to the DataFrame
+    st.markdown(f"""
     <style>
-    .stTable td {
+    .stTable td {{
         border: 1px solid #ddd;
         padding: 8px;
         text-align: left;
-    }
-    .stTable th {
+    }}
+    .stTable th {{
         background-color: #f2f2f2;
         border: 1px solid #ddd;
         padding: 8px;
         text-align: left;
-    }
+    }}
     </style>
     """)
 
