@@ -81,6 +81,32 @@ def main():
             player_image = load_image(player_graph_url)
             if player_image:
                 st.image(player_image, use_column_width=True)
+            st.markdown("""
+                **Análisis de gráfica de estadísticas y contratos Individual de las jugadoras de la WNBA**
+        
+                En este análisis se observa la relación entre las estadísticas individuales de las jugadoras de la WNBA y el valor de sus contratos.
+                
+                **Principales hallazgos:**
+        
+                * **Correlación Positiva:**  
+                PTS (Puntos), FGA (Intentos de Tiro de Campo), FGM (Tiros de Campo Anotados), MIN (Minutos Jugados), FP (Puntos de Fantasía), y 3P% (Porcentaje de Tiros de Tres Puntos) muestran una tendencia positiva con respecto a los valores de los contratos. Esto indica que, en general, a medida que las jugadoras tienen mejor desempeño en estas estadísticas, sus contratos tienden a ser más altos.
+                Nota:Es importante destacar que en las gráficas individuales, estas correlaciones se visualizan claramente con tendencias ascendentes.
+                * **Correlaciones Negativas: **  
+                RANK (Ranking de Jugadoras) y TOV (Pérdidas de Balón) presentan una correlación negativa con los valores de los contratos. Las jugadoras con mejor ranking (número más bajo) y las jugadoras con menos pérdidas de Balón tienden a recibir contratos más altos.
+                * **Falta de Correlación Aparente en Algunas Estadísticas: **  
+                Algunas estadísticas como AGE (Edad) muestran una correlación positiva o negativa pero menos significativa, lo cual podría indicar que este factor no es tan determinante en la valoración de los contratos.
+
+                **Conclusiones:**
+                * **Factores de Rendimiento Individual: **  
+                El rendimiento individual medido en puntos, intentos y tiros de campo anotados, minutos jugados, puntos de fantasía y porcentaje de tiros de tres puntos tiene una influencia significativa en la determinación del valor de los contratos de las jugadoras.
+                * **Factores de Posicionamiento y Experiencia: **  
+                El ranking de las jugadoras y la perdida de balones también son factores importantes, con una tendencia a que las jugadoras con menos perdidas de balones y mejor clasificadas reciban contratos más altos. Esto podría estar relacionado con el potencial de desarrollo y el valor de mercado de las jugadoras en esas categorías.
+                * **Elementos No Considerados: **  
+                A pesar de las correlaciones observadas, es probable que otros factores no representados en estas gráficas también influyan en el valor del contrato. Estos factores pueden incluir la reputación de la jugadora, su impacto en el marketing, su contribución al equipo más allá de las estadísticas individuales, y posibles negociaciones contractuales.
+                * **Consistencia en los Datos: **  
+                La mayoría de las gráficas muestran una consistencia en la relación entre las estadísticas y los valores de los contratos, lo que refuerza la validez de las conclusiones extraídas.
+
+                 """)
 
         # Sección de Estadísticas Anuales
         with st.container():
