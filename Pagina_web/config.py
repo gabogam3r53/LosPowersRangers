@@ -9,3 +9,32 @@ STATS_COLUMNS = [
     'FTM', 'FTA', 'FT%', 'OREB', 'DREB', 'AST', 'TOV', 'STL', 'BLK', 'PF', '+-',
     'DD2', 'FP', 'TD3'
 ]
+
+ABBREVS_WNBA = {
+    "GP": "Partidos Jugados",
+    "W": "Victorias",
+    "L": "Derrotas",
+    "MIN": "Minutos Jugados",
+    "FGM": "Canastas de Campo Encestadas",
+    "FGA": "Intentos de Canasta de Campo",
+    "FG%": "Porcentaje de Enceste de Campo",
+    "3PM": "Triples Encestados",
+    "3PA": "Intentos de Triple",
+    "3P%": "Porcentaje de Enceste de Tres Puntos",
+    "FTM": "Tiros Libres Encestados",
+    "FTA": "Intentos de Tiro Libre",
+    "FT%": "Porcentaje de Tiros Libres",
+    "OREB": "Rebotes Ofensivos",
+    "DREB": "Rebotes Defensivos",
+    "REB": "Rebotes Totales",
+    "AST": "Asistencias",
+    "TOV": "Pérdidas de Balón",
+    "STL": "Robos",
+    "BLK": "Tapones",
+    "PF": "Faltas Personales",
+    "FP": "Puntos de Fantasy",
+    "DD2": "Dobles-Dobles",
+    "TD3": "Triples-Dobles",
+    "PTS": "Puntos",
+    "+/-": "Más/Menos"
+}
