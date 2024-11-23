@@ -38,8 +38,6 @@ def main():
     }}
     </style>
     """)
-
-    # Mostrar la tabla con los estilos aplicados
     st.table(abbrev)
 
     
