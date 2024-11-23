@@ -25,12 +25,12 @@ def main():
     # Apply CSS styles directly to the DataFrame
     st.markdown(f"""
     <style>
-    .stTable td {{
+    #my_custom_table td {{
         border: 1px solid #ddd;
         padding: 8px;
         text-align: left;
     }}
-    .stTable th {{
+    #my_custom_table th {{
         background-color: #f2f2f2;
         border: 1px solid #ddd;
         padding: 8px;
@@ -38,7 +38,8 @@ def main():
     }}
     </style>
     """)
-    st.table(abbrev)
+    
+    st.table(abbrev, table_id="my_custom_table")
 
     
     # Crea tres secciones principales usando columnas
