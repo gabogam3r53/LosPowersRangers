@@ -20,11 +20,11 @@ def main():
         return
 
     # Leyenda
-    abbrev = pd.DataFrame.from_dict(ABBREVS_WNBA, orient='index', columns=['Meaning'])
+    abbrev = pd.DataFrame.from_dict(ABBREVS_WNBA, orient='index', columns=['Significado'])
 
     styled_df = abbrev.style.set_properties(**{
     'background-color': 'black',
-    'color': 'black',
+    'color': 'white',
     'border': '1px solid #ddd',
     'padding': '8px'
     })
