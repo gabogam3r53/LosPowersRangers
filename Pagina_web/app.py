@@ -1,6 +1,7 @@
 import streamlit as st
 from utils import load_data, load_image
 from config import *
+import pandas as pd
 
 # Pagina configuracion 
 st.set_page_config(
