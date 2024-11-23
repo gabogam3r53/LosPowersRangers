@@ -22,22 +22,14 @@ def main():
     # Leyenda
     abbrev = pd.DataFrame.from_dict(ABBREVS_WNBA, orient='index', columns=['Meaning'])
 
-    # Apply CSS styles directly to the DataFrame
-    st.write(f"""
-    <style>
-    .stTable td {{
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }}
-    .stTable th {{
-        background-color: #f2f2f2;
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }}
-    </style>
-    """)
+    styled_df = abbrev.style.set_properties(**{
+    'background-color': 'white',
+    'color': 'black',
+    'border': '1px solid #ddd',
+    'padding': '8px'
+    })
+
+    st.dataframe(styled_df)
     
     st.table(abbrev)
     
