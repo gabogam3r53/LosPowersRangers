@@ -23,16 +23,14 @@ def main():
     abbrev = pd.DataFrame.from_dict(ABBREVS_WNBA, orient='index', columns=['Meaning'])
 
     styled_df = abbrev.style.set_properties(**{
-    'background-color': 'white',
+    'background-color': 'black',
     'color': 'black',
     'border': '1px solid #ddd',
     'padding': '8px'
     })
 
     st.dataframe(styled_df)
-    
-    st.table(abbrev)
-    
+        
     # Crea tres secciones principales usando columnas
     col1, col2 = st.columns([2, 1])
 
@@ -66,6 +64,21 @@ def main():
                 """)
 
     with col2:
+
+        # Sección leyenda de datos
+
+        with st.container():
+        abbrev = pd.DataFrame.from_dict(ABBREVS_WNBA, orient='index', columns=['Meaning'])
+
+        styled_df = abbrev.style.set_properties(**{
+        'background-color': 'black',
+        'color': 'black',
+        'border': '1px solid #ddd',
+        'padding': '8px'
+        })
+
+        st.dataframe(styled_df)
+        
         # Sección de análisis de jugadores individuales
         with st.container():
             st.subheader("Gráfica: Jugadoras individuales")
