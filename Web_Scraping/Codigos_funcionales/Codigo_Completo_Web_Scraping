@@ -256,15 +256,25 @@ def arreglar_dataframe(data_jugadoras):
     nombresjugadorasfix = data_jugadoras['Nombre']
     lista_nombres = nombresjugadorasfix.tolist()
     #print("\nLista de nombres:", lista_nombres)
-    lista_nombres[7] = 'CHEYENNE PARKER-TYUS'
-    lista_nombres[31] = 'BETNIJAH LANEY-HAMILTON'
-    lista_nombres[75] = 'LOU LOPEZ SÉNÉCHAL'
-    lista_nombres[86] = 'DORKA JUHÁSZL'
-    lista_nombres[114] = 'ASTOU NDOUR-FALL'
-    lista_nombres[135] = 'IVANA DOJKIĆ'
-    #lista_nombres[143] = 'OLIVIA ÉPOUPA'
+    lista_nombres[8] = 'CHEYENNE PARKER-TYUS'
+    lista_nombres[32] = 'BETNIJAH LANEY-HAMILTON'
+    lista_nombres[76] = 'LOU LOPEZ SÉNÉCHAL'
+    lista_nombres[87] = 'DORKA JUHÁSZL'
+    lista_nombres[115] = 'ASTOU NDOUR-FALL'
+    lista_nombres[136] = 'IVANA DOJKIĆ'
+    lista_nombres[144] = 'OLIVIA ÉPOUPA'
+    #lista_nombres[155] = 'DULCY FANKAM MENDJIADEU'
+    #lista_nombres[167] = 'ASIA (AD) DURR'
+    #lista_nombres[174] = 'MARINE JOHANNÈS'
+    #lista_nombres[177] = 'HAN XU'
+    #lista_nombres[279] = 'BRITTANY BOYD-JONES'
+    #lista_nombres[285] = 'KELSEY GRIFFIN'
+    #lista_nombres[286] = 'BROOKE MCCARTY-WILLIAMS'
+    
+
     return lista_nombres    #returnamos los nuevos nombres
     
+
 
 def get_wnba_stats(link,data_original,año):
     logging.info(f"Iniciando funcion get_wnba_stats con link: {link}")
@@ -369,7 +379,7 @@ for fecha,link in link_jugadoras_stats.items():
     data_jugadoras = pd.concat([data_jugadoras,get_wnba_stats(link,data_jugadoras,fecha)], axis=1)
 
 print(data_jugadoras)
-data_jugadoras.to_csv('datos_completos_sou.csv', index=False, encoding='utf-8-sig')
+data_jugadoras.to_csv('datos_completos_fix.csv', index=False, encoding='utf-8-sig')
 
 #data_jugadoras.info()
 '''
