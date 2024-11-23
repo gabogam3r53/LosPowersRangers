@@ -23,14 +23,14 @@ def main():
     abbrev = pd.DataFrame.from_dict(ABBREVS_WNBA, orient='index', columns=['Meaning'])
 
     # Apply CSS styles directly to the DataFrame
-    st.markdown(f"""
+    st.write(f"""
     <style>
-    #my_custom_table td {{
+    .stTable td {{
         border: 1px solid #ddd;
         padding: 8px;
         text-align: left;
     }}
-    #my_custom_table th {{
+    .stTable th {{
         background-color: #f2f2f2;
         border: 1px solid #ddd;
         padding: 8px;
@@ -39,8 +39,7 @@ def main():
     </style>
     """)
     
-    st.table(abbrev, table_id="my_custom_table")
-
+    st.table(abbrev)
     
     # Crea tres secciones principales usando columnas
     col1, col2 = st.columns([2, 1])
