@@ -23,20 +23,20 @@ def main():
     abbrev = pd.DataFrame.from_dict(ABBREVS_WNBA, orient='index', columns=['Meaning'])
 
     st.markdown("""
-        <style>
-        .stTable td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        .stTable th {
-            background-color: #f2f2f2;
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        </style>
-        """)
+    <style>
+    .stTable td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    .stTable th {
+        background-color: #f2f2f2;
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    </style>
+    """)
 
     # Mostrar la tabla con los estilos aplicados
     st.table(abbrev)
