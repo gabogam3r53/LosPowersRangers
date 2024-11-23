@@ -19,18 +19,6 @@ def main():
         st.error("Failed to load data. Please try again later.")
         return
 
-    # Leyenda
-    abbrev = pd.DataFrame.from_dict(ABBREVS_WNBA, orient='index', columns=['Significado'])
-
-    styled_df = abbrev.style.set_properties(**{
-    'background-color': 'black',
-    'color': 'white',
-    'border': '1px solid #ddd',
-    'padding': '8px'
-    })
-
-    st.dataframe(styled_df)
-        
     # Crea tres secciones principales usando columnas
     col1, col2 = st.columns([2, 1])
 
@@ -72,7 +60,7 @@ def main():
     
             styled_df = abbrev.style.set_properties(**{
             'background-color': 'black',
-            'color': 'black',
+            'color': 'white',
             'border': '1px solid #ddd',
             'padding': '8px'
             })
