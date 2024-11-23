@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 def main():
-    st.title("Estadísticas de Jugadoras de la WNBA (2016-2024)")
+    st.title("Estadísticas de Jugadoras de la WNBA (2016-2024)P")
 
     # Cargar datos
     data = load_data(DATA_URL)
