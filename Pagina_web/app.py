@@ -119,7 +119,7 @@ def main():
                 Nota:Es importante destacar que en las gráficas individuales, estas correlaciones se visualizan claramente con tendencias ascendentes.
                 * **Correlaciones Negativas:** RANK (Ranking de Jugadoras) y TOV (Pérdidas de Balón) presentan una correlación negativa con los valores de los contratos. Las jugadoras con mejor ranking (número más bajo) y las jugadoras con menos pérdidas de Balón tienden a recibir contratos más altos.
                 * **Falta de Correlación Aparente en Algunas Estadísticas:** Algunas estadísticas como AGE (Edad) muestran una correlación positiva o negativa pero menos significativa, lo cual podría indicar que este factor no es tan determinante en la valoración de los contratos.
-
+                                 
                 **Conclusiones:**
                 * **Factores de Rendimiento Individual:**  
                 El rendimiento individual medido en puntos, intentos y tiros de campo anotados, minutos jugados, puntos de fantasía y porcentaje de tiros de tres puntos tiene una influencia significativa en la determinación del valor de los contratos de las jugadoras.
@@ -134,7 +134,13 @@ def main():
                 La mayoría de las gráficas muestran una consistencia en la relación entre las estadísticas y los valores de los contratos, lo que refuerza la validez de las conclusiones extraídas.
 
                  """)
-
+        if player == 'NATASHA HOWARD':
+            st.markdown("""
+            * **Observacion:** Hay algunas jugadoras como por ejemplo "Natasha Howard", las cuales si se fijan en la grafica de puntos, tuvieron una mejora al pasar los años(primer contrato) y en consecuencia obtuvieron un mejor contrato debido a que las Fichó un nuevo equipo, ahora bien, este cambio hace que el numero de puntos que estaba teniendo anteriormente tienda a disminuir mientras se acostumbra a sus nuevas compañeras y logre adaptarse para tener las mismas posibilidades de hacer puntos en su nuevo equipo.
+                Así mismo se puede analizar que cuando se generó el cambio de equipo los FGA (Intentos de Tiro de Campo) y  FGM (Tiros de Campo Anotados), tambien disminuyeron mientras Natasha Howard se adaptaba.
+                
+            * Estas graficas permiten estudiar el comportamiento de las jugadoras al pasar del tiempo antes y despues de un nuevo contrato.
+             """)      
         # Sección de Estadísticas Anuales
         with st.container():
             st.subheader("Gráfica: Media de estadísticas a traves de los años")
