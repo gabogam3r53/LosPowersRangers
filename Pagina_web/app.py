@@ -50,6 +50,8 @@ def main():
         
                 Los resultados de este análisis sugieren que las estadísticas tradicionales de producción ofensiva y participación en el juego son los principales determinantes del valor de mercado de las jugadoras de la WNBA. Sin embargo, factores como la edad y el rango también desempeñan un papel importante. Además, se destaca la necesidad de considerar el contexto histórico de la liga al interpretar los resultados, especialmente en el caso de estadísticas como el porcentaje de acierto en tiros de 3 puntos.
                 """)
+        with st.container():
+            st.subheader("Tendencias Temporales en el Valor de Mercado")
 
     with col2:
 
