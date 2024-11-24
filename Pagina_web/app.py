@@ -119,8 +119,10 @@ def main():
                 Nota:Es importante destacar que en las gráficas individuales, estas correlaciones se visualizan claramente con tendencias ascendentes.
                 * **Correlaciones Negativas:** RANK (Ranking de Jugadoras) y TOV (Pérdidas de Balón) presentan una correlación negativa con los valores de los contratos. Las jugadoras con mejor ranking (número más bajo) y las jugadoras con menos pérdidas de Balón tienden a recibir contratos más altos.
                 * **Falta de Correlación Aparente en Algunas Estadísticas:** Algunas estadísticas como AGE (Edad) muestran una correlación positiva o negativa pero menos significativa, lo cual podría indicar que este factor no es tan determinante en la valoración de los contratos.
-                 * **Observacion:** Hay algunas jugadoras como por ejemplo "Natasha Howard", las cuales si se fijan en la grafica de puntos, tuvieron una mejora al pasar los años(primer contrato) y en consecuencia obtuvieron un mejor contrato debido a que las Fichó un nuevo equipo, ahora bien, este cambio hace que el numero de puntos que estaba teniendo anteriormente tienda a disminuir mientras se acostumbra a sus nuevas compañeras 
-                y logre adaptarse para tener las mismas posibilidades de hacer puntos en su nuevo equipo.
+                 * **Observacion:** Hay algunas jugadoras como por ejemplo "Natasha Howard", las cuales si se fijan en la grafica de puntos, tuvieron una mejora al pasar los años(primer contrato) y en consecuencia obtuvieron un mejor contrato debido a que las Fichó un nuevo equipo, ahora bien, este cambio hace que el numero de puntos que estaba teniendo anteriormente tienda a disminuir mientras se acostumbra a sus nuevas compañeras y logre adaptarse para tener las mismas posibilidades de hacer puntos en su nuevo equipo.
+                Así mismo se puede analizar que cuando se generó el cambio de equipo los FGA (Intentos de Tiro de Campo) y  FGM (Tiros de Campo Anotados), tambien disminuyeron mientras Natasha Howard se adaptaba.
+                
+                * Estas graficas permiten estudiar el comportamiento de las jugadoras al pasar del tiempo antes y despues de un nuevo contrato.
                                     
                 **Conclusiones:**
                 * **Factores de Rendimiento Individual:**  
