@@ -18,7 +18,10 @@ def main():
     if data is None:
         st.error("Failed to load data. Please try again later.")
         return
-
+    data_correlacion = load_data(DATA_CORRELACION_URL)
+    if data_correlacion is None:
+        st.error("Failed to load data. Please try again later.")
+        return
     # Crea tres secciones principales usando columnas
     col1, col2 = st.columns([2, 1])
 
@@ -52,10 +55,27 @@ def main():
                 """)
         with st.container():
             st.subheader("Tendencias Temporales en el Valor de Mercado")
-            data_correlacion = load_data(DATA_CORRELACION_URL)
-            if data is None:
-                st.error("Failed to load data. Please try again later.")
-            return
+            st.dataframe(data_correlacion, height=400)
+
+            st.markdown("""
+
+                El análisis de las correlaciones en los contratos de jugadoras de la WNBA a través de los años revela cambios significativos en la importancia de ciertas métricas, especialmente en el contexto del aumento de los tiros de tres puntos.
+
+                ##### 1. Triples encestados (3PM)
+                - **Aumento en la Correlación**: La correlación de 3PM ha aumentado considerablemente en los últimos años. En 2017, la correlación era solo **0.0147**, mientras que en 2024 alcanzó **0.5511**. Esto indica un creciente énfasis en el juego exterior y la efectividad de los tiros de tres.
+                - **Interpretación**: Este aumento sugiere que las estrategias de juego han evolucionado, priorizando más los tiros de tres puntos, lo que es consistente con la tendencia observada en el baloncesto profesional, donde se valora cada vez más la capacidad de anotar desde larga distancia.
+
+                ##### 2. Puntos (PTS)
+                - **Correlaciones Altas**: La correlación de PTS ha mostrado una tendencia a la baja desde un máximo de **0.7578** en 2020 a **0.5350** en 2024.  Aunque sigue siendo significativa, este descenso podría reflejar una diversificación en el enfoque ofensivo, donde no solo se depende del anotador principal.
+
+                ##### 3. Asistencias (AST)
+                - **Estabilidad Moderada**: Las asistencias han mantenido correlaciones relativamente estables, oscilando entre **0.5526** en 2017 y **0.2584** en 2024.sto puede indicar que, aunque hay un enfoque creciente en el tiro exterior, las jugadoras todavía están contribuyendo al juego colectivo a través de asistencias. 
+
+                ##### 4. Porcentaje de Tiros de Tres (3P%)
+                - **Correlación Variable**: La correlación del porcentaje de tiros de tres ha sido inconsistente, con un valor negativo significativo en 2023 (**-0.0069**). Esto sugiere que, aunque se están tomando más tiros de tres, la efectividad no ha seguido el mismo patrón.Dado que la WNBA es una liga en crecimiento, es posible que los equipos estén dispuestos a invertir en jugadoras que puedan aumentar su volumen de tiros, incluso si su efectividad no es alta en este momento. Esta estrategia podría ser parte de un enfoque a largo plazo para desarrollar un juego más dinámico y atractivo.
+
+                
+                """)
 
 
     with col2:
@@ -63,7 +83,7 @@ def main():
         # Sección leyenda de datos
 
         with st.container():
-            abbrev = pd.DataFrame.from_dict(ABBREVS_WNBA, orient='index', columns=['Meaning'])
+            abbrev = pd.DataFrame.from_dict(ABBREVS_WNBA, orient='index', columns=['Significado'])
     
             styled_df = abbrev.style.set_properties(**{
             'background-color': 'black',
