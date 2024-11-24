@@ -52,6 +52,11 @@ def main():
                 """)
         with st.container():
             st.subheader("Tendencias Temporales en el Valor de Mercado")
+            data_correlacion = load_data(DATA_CORRELACION_URL)
+            if data is None:
+                st.error("Failed to load data. Please try again later.")
+            return
+
 
     with col2:
 
