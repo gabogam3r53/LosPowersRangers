@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # URL de la imagen de fondo 
-background_image_url = 'https://github.com/gabogam3r53/PowersRangers/blob/develop/Datos/Background_Paginaweb.png?raw=true' 
+background_image_url = 'https://github.com/gabogam3r53/PowersRangers/blob/develop/Datos/Background_Paginaweb2.png?raw=true' 
 # CSS para la imagen de fondo 
 page_bg_img = f""" 
 <style> 
