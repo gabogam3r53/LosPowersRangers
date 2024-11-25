@@ -17,7 +17,7 @@ page_bg_img = f"""
 <style> 
 .stApp {{ 
 background-image: url({background_image_url}); 
-background-size: cover; 
+background-size: contain; 
 background-repeat: no-repeat; 
 background-attachment: fixed; 
 }} 
@@ -27,13 +27,14 @@ background-attachment: fixed;
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 def main():
-    st.markdown("""
+    estilo = """
     <style>
-    .stTitle {
+    .stTitle {{
       color: blue;
-    }
+    }}
     </style>
-    """, unsafe_allow_html=True)
+    """
+    st.markdown(estilo, unsafe_allow_html=True)
     st.title("Estadísticas de Jugadoras de la WNBA (2016-2024)")
     st.write("El presente proyecto se enfoca en el ámbito del baloncesto femenino de la WNBA, recopilando datos exhaustivos de las temporadas 2016-2024 directamente de las fuentes oficiales: Spotrac.com y Stats.wnba.com. Este conjunto de datos permitió realizar un análisis detallado de las jugadoras, sus estadísticas y tendencias a lo largo de los años.")
 
