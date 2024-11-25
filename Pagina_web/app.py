@@ -43,7 +43,7 @@ def main():
     with col1:
         # Sección de tabla de datos
         with st.container():
-            st.subheader("Estadísticas de jugadoras")
+            st.markdown("## :orange[Estadísticas de jugadoras]")
             st.dataframe(data, height=400)
 
         # Sección de estadísticas de contratos
