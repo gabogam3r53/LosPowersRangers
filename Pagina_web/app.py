@@ -11,14 +11,6 @@ st.set_page_config(
 )
 
 def main():
-    estilo = """
-    <style>
-    .stTitle {{
-      color: blue;
-    }}
-    </style>
-    """
-    st.markdown(estilo, unsafe_allow_html=True)
     st.markdown("# :blue[Estadísticas de Jugadoras de la WNBA (2016-2024)]")
     st.write("El presente proyecto se enfoca en el ámbito del baloncesto femenino de la WNBA, recopilando datos exhaustivos de las temporadas 2016-2024 directamente de las fuentes oficiales: Spotrac.com y Stats.wnba.com. Este conjunto de datos permitió realizar un análisis detallado de las jugadoras, sus estadísticas y tendencias a lo largo de los años.")
     st.divider()
@@ -48,7 +40,7 @@ def main():
 
         # Sección de estadísticas de contratos
         with st.container():
-            st.subheader("Gráfica: Contrato contra Estadísticas Interesantes")
+            st.markdown("## :orange[Gráfica: Contrato contra estadísticas interesantes]")
             contract_image = load_image(CONTRACT_GRAPH_URL)
             if contract_image:
                 st.image(contract_image, use_column_width=True)
@@ -69,7 +61,7 @@ def main():
                 Los resultados de este análisis sugieren que las estadísticas tradicionales de producción ofensiva y participación en el juego son los principales determinantes del valor de mercado de las jugadoras de la WNBA. Sin embargo, factores como la edad y el rango también desempeñan un papel importante. Además, se destaca la necesidad de considerar el contexto histórico de la liga al interpretar los resultados, especialmente en el caso de estadísticas como el porcentaje de acierto en tiros de 3 puntos.
                 """)
         with st.container():
-            st.subheader("Tendencias Temporales en el Valor de Mercado")
+            st.markdown("## :orange[Tendencias Temporales en el Valor de Mercado]")
             st.dataframe(data_correlacion, height=400)
 
             # Limpiar el DataFrame para que tenga un formato adecuado
@@ -150,7 +142,7 @@ def main():
         
         # Sección de análisis de jugadores individuales
         with st.container():
-            st.subheader("Gráfica: Jugadoras individuales")
+           st.markdown("## :orange[Gráfica: Jugadoras individuales]")
             player = st.selectbox(
                 "Selección de jugadora:",
                 options=data['Nombre'].unique()
@@ -197,7 +189,7 @@ def main():
              """)      
         # Sección de Estadísticas Anuales
         with st.container():
-            st.subheader("Gráfica: Media de estadísticas a traves de los años")
+            st.markdown("## :orange[Gráfica: Media de estadísticas a traves de los años]")
             stat = st.selectbox(
                 "Selección de estadística:",
                 options=STATS_COLUMNS
