@@ -29,7 +29,7 @@ def main():
         return
     
     # Crea tres secciones principales usando columnas
-    col1, col2 = st.columns([2, 1])
+    col1, col2 = st.columns([2, 1],gap="large")
 
     with col1:
         # Sección de tabla de datos
