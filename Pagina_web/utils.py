@@ -26,3 +26,14 @@ def load_data(url):
     except Exception as e:
         st.error(f"Error loading data: {e}")
         return None
+
+@st.cache_data
+def load_data_csv(url):
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        return pd.read_csv(BytesIO(response.content))
+    except Exception as e:
+        st.error(f"Error loading data: {e}")
+        return None
+    

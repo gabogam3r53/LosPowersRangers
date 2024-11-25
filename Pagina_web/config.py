@@ -4,6 +4,7 @@ CONTRACT_GRAPH_URL = f"{GITHUB_BASE_URL}/Analisis_Datos/Graficas/Contratos_contr
 INDIVIDUAL_GRAPHS_DIR = "https://raw.githubusercontent.com/gabogam3r53/PowersRangers/refs/heads/develop/Analisis_Datos/Graficas/Graficas_datos_individuales/"
 YEARLY_GRAPHS_DIR = "https://raw.githubusercontent.com/gabogam3r53/PowersRangers/refs/heads/develop/Analisis_Datos/Graficas/Graficas_datos_liga_por_año/"
 DATA_CORRELACION_URL = "https://github.com/gabogam3r53/PowersRangers/raw/develop/Analisis_Datos/Tablas/Correlacion_por_anual.xlsx"
+DATA_CORRELACION_CSV_URL = "https://github.com/gabogam3r53/PowersRangers/raw/develop/Analisis_Datos/Tablas/Correlacion_contrato_diferentes.csv"
 
 STATS_COLUMNS = [
     'RANK', 'AGE', 'GP', 'MIN', 'PTS', 'FGM', 'FGA', 'FG%', '3PM', '3PA', '3P%',
