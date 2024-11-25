@@ -44,7 +44,7 @@ def main():
             if contract_image:
                 st.image(contract_image, use_column_width=True)
             st.markdown("""
-                **Análisis de correlaciones entre estadísticas y valor de contrato en la WNBA**
+                **Análisis de correlaciones entre estadísticas y valor de contrato en la WNBA.**
         
                 En este análisis se explora la relación entre las estadísticas individuales de las jugadoras de la WNBA y el valor de sus contratos, utilizando datos de las temporadas 2016-2024. A través de gráficas de dispersión, se visualiza cómo variables como puntos por partido (PTS), intentos y aciertos de campo (FGA, FGM), minutos jugados (MIN), valoración (FP), pérdidas de balón (TOV) y rango (RANK) se relacionan con el valor de mercado de las jugadoras.
         
