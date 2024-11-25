@@ -29,9 +29,9 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 def main():
     st.markdown("""
     <style>
-    .stTitle {
+    .stTitle {{
       color: blue;
-    }
+    }}
     </style>
     """, unsafe_allow_html=True)
     st.title("Estadísticas de Jugadoras de la WNBA (2016-2024)")
