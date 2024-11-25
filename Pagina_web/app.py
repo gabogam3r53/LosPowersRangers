@@ -10,6 +10,22 @@ st.set_page_config(
     layout="wide"
 )
 
+# URL de la imagen de fondo 
+background_image_url = 'https://assets-cms.thescore.com/uploads/image/file/738189/w640xh480_GettyImages-2154624623.jpg?ts=1721862239' 
+# CSS para la imagen de fondo 
+page_bg_img = f""" 
+<style> 
+.stApp {{ 
+background-image: url({background_image_url}); 
+background-size: cover; 
+background-repeat: no-repeat; 
+background-attachment: fixed; 
+}} 
+</style> 
+"""
+# Incorporar el CSS en Streamlit 
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 def main():
     st.markdown("""
     <style>
