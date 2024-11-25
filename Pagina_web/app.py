@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # URL de la imagen de fondo 
-background_image_url = 'https://assets-cms.thescore.com/uploads/image/file/738189/w640xh480_GettyImages-2154624623.jpg?ts=1721862239' 
+background_image_url = 'https://github.com/gabogam3r53/PowersRangers/blob/develop/Datos/Background_Paginaweb.png?raw=true' 
 # CSS para la imagen de fondo 
 page_bg_img = f""" 
 <style> 
