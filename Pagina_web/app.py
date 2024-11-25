@@ -142,7 +142,7 @@ def main():
         
         # Sección de análisis de jugadores individuales
         with st.container():
-           st.markdown("## :orange[Gráfica: Jugadoras individuales]")
+            st.markdown("## :orange[Gráfica: Jugadoras individuales]")
             player = st.selectbox(
                 "Selección de jugadora:",
                 options=data['Nombre'].unique()
