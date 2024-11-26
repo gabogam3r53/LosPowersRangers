@@ -44,7 +44,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 def main():
-    
+    st.markdown("<div class='main'>", unsafe_allow_html=True)
     st.markdown("# :blue[Estadísticas de Jugadoras de la WNBA (2016-2024)]")
     st.write("El presente proyecto se enfoca en el ámbito del baloncesto femenino de la WNBA, recopilando datos exhaustivos de las temporadas 2016-2024 directamente de las fuentes oficiales: Spotrac.com y Stats.wnba.com. Este conjunto de datos permitió realizar un análisis detallado de las jugadoras, sus estadísticas y tendencias a lo largo de los años.")
     st.divider()
@@ -281,6 +281,7 @@ def main():
 
                             En conclusión, el análisis del porcentaje de asistencias en la WNBA muestra una clara evolución hacia un juego más colectivo y sofisticado. Esta tendencia es positiva y refleja el desarrollo del baloncesto femenino a nivel global. Sin embargo, es importante continuar analizando esta estadística en relación con otras variables para obtener una comprensión más completa de los factores que influyen en el éxito de los equipos y en la evolución del juego.
                             """)
+    st.markdown("</div>", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
