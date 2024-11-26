@@ -21,7 +21,7 @@ background-image: url({background_image_url});
 background-size: contain; 
 background-position: 100%;
 background-repeat: no-repeat;  
-opacity: 1;
+backgroud-opacity: 0.75;
 }} 
 </style> 
 """
