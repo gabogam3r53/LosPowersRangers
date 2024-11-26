@@ -12,6 +12,7 @@ st.set_page_config(
 
 # URL de la imagen de fondo 
 background_image_url = 'https://github.com/gabogam3r53/PowersRangers/blob/develop/Datos/Background_Paginaweb2.png?raw=true' 
+overlay_image_url = 'https://img.freepik.com/foto-gratis/fondo-ilustracion-particulas-brillo-polvo-dorado_1017-42066.jpg'
 # CSS para la imagen de fondo 
 page_bg_img = f""" 
 <style> 
@@ -21,6 +22,21 @@ background-size: contain;
 background-position: 100%;
 background-repeat: no-repeat;  
 }} 
+.stApp::before {{
+content: ""; 
+background-image: url({overlay_image_url}); 
+background-size: contain; /* Ajusta el tamaño según tus necesidades */ 
+background-repeat: no-repeat; 
+background-position: center; 
+opacity: 0.7; /* Ajusta la opacidad según tus necesidades */ 
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%; 
+z-index: 1; /* Asegúrate de que esté por encima del primer fondo */ 
+}}
+
 </style> 
 """
 # Incorporar el CSS en Streamlit 
