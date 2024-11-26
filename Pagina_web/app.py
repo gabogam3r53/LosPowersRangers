@@ -30,7 +30,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 def main():
     
-    st.markdown("# :notebook_with_decorative_cover: :blue[Estadísticas de Jugadoras de la WNBA (2016-2024)]")
+    st.markdown("# :blue[Estadísticas de Jugadoras de la WNBA (2016-2024)]")
     st.write("El presente proyecto se enfoca en el ámbito del baloncesto femenino de la WNBA, recopilando datos exhaustivos de las temporadas 2016-2024 directamente de las fuentes oficiales: Spotrac.com y Stats.wnba.com. Este conjunto de datos permitió realizar un análisis detallado de las jugadoras, sus estadísticas y tendencias a lo largo de los años.")
     st.divider()
 
@@ -54,12 +54,12 @@ def main():
     with col1:
         # Sección de tabla de datos
         with st.container():
-            st.markdown("## :orange[Estadísticas de jugadoras]")
+            st.markdown("## :notebook_with_decorative_cover: :orange[Datos estadísticas y contratos]")
             st.dataframe(data, height=400)
 
         # Sección de estadísticas de contratos
         with st.container():
-            st.markdown("## :eyes: :orange[Gráfica: Contrato contra estadísticas interesantes]")
+            st.markdown("## :mag: :orange[Gráfica: Contrato contra estadísticas interesantes]")
             contract_image = load_image(CONTRACT_GRAPH_URL)
             if contract_image:
                 st.image(contract_image, use_column_width=True)
@@ -208,7 +208,7 @@ def main():
              """)      
         # Sección de Estadísticas Anuales
         with st.container():
-            st.markdown("## :graph: :orange[Gráfica: Media de estadísticas a traves de los años]")
+            st.markdown("## :chart: :orange[Gráfica: Media de estadísticas a traves de los años]")
             stat = st.selectbox(
                 "Selección de estadística:",
                 options=STATS_COLUMNS
