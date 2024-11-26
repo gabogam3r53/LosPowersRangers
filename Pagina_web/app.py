@@ -9,25 +9,27 @@ st.set_page_config(
     page_title="WNBAmarket",
     layout="wide"
 )
-
 # URL de la imagen de fondo 
 background_image_url = 'https://github.com/gabogam3r53/PowersRangers/blob/develop/Datos/Background_Paginaweb2.png?raw=true' 
 # CSS para la imagen de fondo 
 page_bg_img = f""" 
 <style> 
-.stApp {{ 
-background-image: url({background_image_url}); 
+.stApp {{
+background-image: url({background_image_url});
 background-size: contain; 
 background-position: 100%;
-background-repeat: no-repeat; 
-background-attachment: fixed; 
+background-repeat: no-repeat;  
+background-attachment: local;
+background-color: #000000;
 }} 
 </style> 
 """
 # Incorporar el CSS en Streamlit 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
+
 def main():
+    
     st.markdown("# :blue[Estadísticas de Jugadoras de la WNBA (2016-2024)]")
     st.write("El presente proyecto se enfoca en el ámbito del baloncesto femenino de la WNBA, recopilando datos exhaustivos de las temporadas 2016-2024 directamente de las fuentes oficiales: Spotrac.com y Stats.wnba.com. Este conjunto de datos permitió realizar un análisis detallado de las jugadoras, sus estadísticas y tendencias a lo largo de los años.")
     st.divider()
@@ -52,12 +54,12 @@ def main():
     with col1:
         # Sección de tabla de datos
         with st.container():
-            st.markdown("## :orange[Estadísticas de jugadoras]")
+            st.markdown("## :notebook_with_decorative_cover: :orange[Datos estadísticas y contratos]")
             st.dataframe(data, height=400)
 
         # Sección de estadísticas de contratos
         with st.container():
-            st.markdown("## :orange[Gráfica: Contrato contra estadísticas interesantes]")
+            st.markdown("## :mag: :orange[Gráfica: Contrato contra estadísticas interesantes]")
             contract_image = load_image(CONTRACT_GRAPH_URL)
             if contract_image:
                 st.image(contract_image, use_column_width=True)
@@ -78,7 +80,7 @@ def main():
                 Los resultados de este análisis sugieren que las estadísticas tradicionales de producción ofensiva y participación en el juego son los principales determinantes del valor de mercado de las jugadoras de la WNBA. Sin embargo, factores como la edad y el rango también desempeñan un papel importante. Además, se destaca la necesidad de considerar el contexto histórico de la liga al interpretar los resultados, especialmente en el caso de estadísticas como el porcentaje de acierto en tiros de 3 puntos.
                 """)
         with st.container():
-            st.markdown("## :orange[Tendencias Temporales en el Valor de Mercado]")
+            st.markdown("## :clock8: :orange[Tendencias Temporales en el Valor de Mercado]")
             st.dataframe(data_correlacion, height=400)
 
             # Limpiar el DataFrame para que tenga un formato adecuado
@@ -159,7 +161,7 @@ def main():
         
         # Sección de análisis de jugadores individuales
         with st.container():
-            st.markdown("## :orange[Gráfica: Jugadoras individuales]")
+            st.markdown("## :basketball: :orange[Gráfica: Jugadoras individuales]")
             player = st.selectbox(
                 "Selección de jugadora:",
                 options=data['Nombre'].unique()
@@ -206,7 +208,7 @@ def main():
              """)      
         # Sección de Estadísticas Anuales
         with st.container():
-            st.markdown("## :orange[Gráfica: Media de estadísticas a traves de los años]")
+            st.markdown("## :chart: :orange[Gráfica: Media de estadísticas a traves de los años]")
             stat = st.selectbox(
                 "Selección de estadística:",
                 options=STATS_COLUMNS
@@ -264,6 +266,7 @@ def main():
 
                             En conclusión, el análisis del porcentaje de asistencias en la WNBA muestra una clara evolución hacia un juego más colectivo y sofisticado. Esta tendencia es positiva y refleja el desarrollo del baloncesto femenino a nivel global. Sin embargo, es importante continuar analizando esta estadística en relación con otras variables para obtener una comprensión más completa de los factores que influyen en el éxito de los equipos y en la evolución del juego.
                             """)
+        
 
 if __name__ == "__main__":
     main()
