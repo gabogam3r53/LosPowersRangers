@@ -20,6 +20,7 @@ background-size: contain;
 background-position: 100%;
 background-repeat: no-repeat;  
 background-attachment: local;
+opacity: 0.5;
 }} 
 </style> 
 """
