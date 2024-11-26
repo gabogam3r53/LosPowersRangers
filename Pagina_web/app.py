@@ -161,7 +161,7 @@ def main():
         
         # Sección de análisis de jugadores individuales
         with st.container():
-            st.markdown("## :orange[Gráfica: Jugadoras individuales]")
+            st.markdown("## :basketball: :orange[Gráfica: Jugadoras individuales]")
             player = st.selectbox(
                 "Selección de jugadora:",
                 options=data['Nombre'].unique()
@@ -208,7 +208,7 @@ def main():
              """)      
         # Sección de Estadísticas Anuales
         with st.container():
-            st.markdown("## :orange[Gráfica: Media de estadísticas a traves de los años]")
+            st.markdown("## :graph: :orange[Gráfica: Media de estadísticas a traves de los años]")
             stat = st.selectbox(
                 "Selección de estadística:",
                 options=STATS_COLUMNS
