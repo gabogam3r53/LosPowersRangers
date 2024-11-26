@@ -19,7 +19,7 @@ background-image: url({background_image_url});
 background-size: contain; 
 background-position: 100%;
 background-repeat: no-repeat;  
-background-attachment: local;
+background-attachment: fixed;
 background-color: #000000;
 }} 
 </style> 
