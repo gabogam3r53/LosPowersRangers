@@ -22,6 +22,21 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-color: #000000;
 }} 
+.stApp::before {{
+content: "";
+background: rgba(0, 0, 0, 0.5); /* Color gris oscuro con transparencia */ 
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 100%; 
+z-index: 1; /* Overlay debe estar por encima del fondo */ 
+}}
+.main {{ 
+position: relative; 
+z-index: 2; /* Contenido debe estar por encima del overlay */ 
+color: white; /* Para que el texto sea visible sobre el overlay oscuro */ 
+}}
 </style> 
 """
 # Incorporar el CSS en Streamlit 
