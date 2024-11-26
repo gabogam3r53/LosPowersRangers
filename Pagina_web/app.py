@@ -25,17 +25,6 @@ background-color: #000000;
 .stApp::before {{
 content: "";
 background: rgba(0, 0, 0, 0.5); /* Color gris oscuro con transparencia */ 
-position: absolute; 
-top: 0; 
-left: 0; 
-width: 100%; 
-height: 100%; 
-z-index: 1; /* Overlay debe estar por encima del fondo */ 
-}}
-.main {{ 
-position: relative; 
-z-index: 2; /* Contenido debe estar por encima del overlay */ 
-color: white; /* Para que el texto sea visible sobre el overlay oscuro */ 
 }}
 </style> 
 """
@@ -44,7 +33,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
 def main():
-    st.markdown("<div class='main'>", unsafe_allow_html=True)
+    
     st.markdown("# :blue[Estadísticas de Jugadoras de la WNBA (2016-2024)]")
     st.write("El presente proyecto se enfoca en el ámbito del baloncesto femenino de la WNBA, recopilando datos exhaustivos de las temporadas 2016-2024 directamente de las fuentes oficiales: Spotrac.com y Stats.wnba.com. Este conjunto de datos permitió realizar un análisis detallado de las jugadoras, sus estadísticas y tendencias a lo largo de los años.")
     st.divider()
