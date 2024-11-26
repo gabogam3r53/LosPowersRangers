@@ -34,7 +34,6 @@ def main():
         <style> 
         .stApp::before {{
            background: rgba(2, 3, 0, 0.5); /* Color gris oscuro con transparencia */ 
-           z-index: 1;
         }}
         </style> 
         """
