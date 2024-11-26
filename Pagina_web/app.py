@@ -22,6 +22,8 @@ background-size: contain;
 background-position: 100%;
 background-repeat: no-repeat;  
 backgroud-opacity: 0.75;
+background-attachment: scroll;
+
 }} 
 </style> 
 """
