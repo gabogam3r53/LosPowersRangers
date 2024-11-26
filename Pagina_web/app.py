@@ -22,7 +22,7 @@ background-size: contain;
 background-position: 100%;
 background-repeat: no-repeat;  
 }} 
-.stApp::before {{
+.stApp::after {{
 content: ""; 
 background-image: url({overlay_image_url}); 
 background-size: contain; /* Ajusta el tamaño según tus necesidades */ 
