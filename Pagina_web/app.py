@@ -33,7 +33,7 @@ def main():
         container_overlay = f""" 
         <style> 
         .stApp::before {{
-           background: rgba(0, 0, 0, 0.5); /* Color gris oscuro con transparencia */ 
+           background: rgba(2, 3, 0, 0.5); /* Color gris oscuro con transparencia */ 
            z-index: 1;
         }}
         </style> 
