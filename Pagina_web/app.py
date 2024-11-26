@@ -12,23 +12,26 @@ st.set_page_config(
 # URL de la imagen de fondo 
 background_image_url = 'https://github.com/gabogam3r53/PowersRangers/blob/develop/Datos/Background_Paginaweb2.png?raw=true' 
 
-# CSS para la imagen de fondo 
-page_bg_img = f""" 
-<style> 
-.stApp {{ 
-background-image: url({background_image_url});
-background-size: contain; 
-background-position: 100%;
-background-repeat: no-repeat;  
-background-attachment: local;
-}} 
-</style> 
-"""
-# Incorporar el CSS en Streamlit 
-st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 
 def main():
+     with st.container():
+        # CSS para la imagen de fondo 
+        page_bg_img = f""" 
+            <style> 
+            .stApp {{ 
+            background-image: url({background_image_url});
+            background-size: contain; 
+            background-position: 100%;
+            background-repeat: no-repeat;  
+            background-attachment: local;
+            }} 
+            </style> 
+        """
+        # Incorporar el CSS en Streamlit 
+        st.markdown(page_bg_img, unsafe_allow_html=True)
+         
     st.markdown("# :blue[Estadísticas de Jugadoras de la WNBA (2016-2024)]")
     st.write("El presente proyecto se enfoca en el ámbito del baloncesto femenino de la WNBA, recopilando datos exhaustivos de las temporadas 2016-2024 directamente de las fuentes oficiales: Spotrac.com y Stats.wnba.com. Este conjunto de datos permitió realizar un análisis detallado de las jugadoras, sus estadísticas y tendencias a lo largo de los años.")
     st.divider()
