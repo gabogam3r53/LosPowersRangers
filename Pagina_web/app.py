@@ -14,20 +14,14 @@ background_image_url = 'https://github.com/gabogam3r53/PowersRangers/blob/develo
 # CSS para la imagen de fondo 
 page_bg_img = f""" 
 <style> 
-.stApp {{ 
-background-color: #000000;
+.stApp {{
+background-image: url({background_image_url});
 background-size: contain; 
 background-position: 100%;
 background-repeat: no-repeat;  
 background-attachment: local;
+background-color: #000000;
 }} 
-.stApp::before {{
-content: "";
-background-image: url({background_image_url});
-background-size: cover;
-background-position: center;
-opacity: 0.5; /* Ajusta la opacidad según tus necesidades */
-z-index: 2;
 </style> 
 """
 # Incorporar el CSS en Streamlit 
