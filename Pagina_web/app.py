@@ -27,7 +27,7 @@ background-image: url({background_image_url});
 background-size: cover;
 background-position: center;
 opacity: 0.5; /* Ajusta la opacidad según tus necesidades */
-z-index: 1;
+z-index: 2;
 </style> 
 """
 # Incorporar el CSS en Streamlit 
