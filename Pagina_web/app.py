@@ -26,7 +26,7 @@ background-color: #000000;
 """
 # Incorporar el CSS en Streamlit 
 with st.container():
-    st.markdown(page_bg_img, unsafe_allow_html=True)
+    st.markdown(page_bg_img, unsafe_allow_html=False)
 
 
 def main():
