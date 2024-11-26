@@ -24,7 +24,7 @@ background-color: #000000;
 }} 
 .stApp::before {{
 content: "";
-background: rgba(0, 0, 0, 0.5); /* Color gris oscuro con transparencia */ 
+background: rgba(0, 0, 0, 5); /* Color gris oscuro con transparencia */ 
 }}
 </style> 
 """
