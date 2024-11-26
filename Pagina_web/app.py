@@ -19,8 +19,7 @@ page_bg_img = f"""
 background-image: url({background_image_url}); 
 background-size: contain; 
 background-position: 100%;
-background-repeat: no-repeat; 
-background-attachment: scroll; 
+background-repeat: no-repeat;  
 }} 
 </style> 
 """
