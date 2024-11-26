@@ -21,22 +21,8 @@ background-image: url({background_image_url});
 background-size: contain; 
 background-position: 100%;
 background-repeat: no-repeat;  
+opacity: 0.7;
 }} 
-.stApp::after {{
-content: ""; 
-background-image: url({overlay_image_url}); 
-background-size: contain; /* Ajusta el tamaño según tus necesidades */ 
-background-repeat: no-repeat; 
-background-position: center; 
-opacity: 0.7; /* Ajusta la opacidad según tus necesidades */ 
-position: absolute; 
-top: 0; 
-left: 0; 
-width: 100%; 
-height: 100%; 
-z-index: 0; /* Asegúrate de que esté por encima del primer fondo */ 
-}}
-
 </style> 
 """
 # Incorporar el CSS en Streamlit 
