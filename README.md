@@ -35,5 +35,5 @@ Streamlit  ,  Pandas  ,  Requests  ,  io (BytesIO)  ,  PIL (Image)
 FINALIZADO
 
 [Agradecimientos]  
-Expresamos nuestro agradecimiento a los profesores, Jenny Remolina y Álvaro Arauz, por su dedicación en la revisión y corrección de nuestros trabajos. Sus comentarios precisos nos han permitido 
+Expresamos nuestro agradecimiento a los profesores, Jenny Remolina y Álvaro Arauz, por su dedicación en la revisión y corrección de nuestros trabajos. Su ayuda nos ha permitido 
 mejorar significativamente nuestros conocimientos en Python. Agradecemos también a nuestros compañeros por el intercambio de ideas y experiencias.
