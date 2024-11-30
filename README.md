@@ -17,9 +17,13 @@ Matplotlib (pyplot)  ,  Seaborn  ,  Numpy
 Streamlit  ,  Pandas  ,  Requests  ,  io (BytesIO)  ,  PIL (Image)
 
 [Proceso]  
-—Recopilación de información: Extracción de datos de las jugadoras  
-—Procesamiento de datos: Filtracion de información.  
-—Creacion de codigo CSV para guardar la información con los datos de las jugadoras.  
+—Recopilación de información: Extracción de datos de las jugadoras desde el 2016 hasta el 2024 usando codigos y librerias de web scrapping para automatizar el proceso, incluyendo sus contratos y estadisticas para saber como ha actuado la liga a traves de casi 10 años 
+—Procesamiento de datos: Filtracion de información para obtener lo que es mas importante en la valoracion de una jugadora, como son:
+Edad, Ranking del equipo al que pertenecen, Minutos en cancha, promedio de puntos por partido, asistencias por partido, porcentaje de tiros de campo, porcentaje de intentos en puntos de 3, porcentaje de tiros libres intentados, Robos por partido, tapones por partido, Rebotes, perdidas de balon, faltas cometidas, Dobles Dobles, Triples Dobles y +/- (Puntos que obtiene el equipo cuando la jugadora esta en cancha).
+—Creacion de codigo CSV para guardar la información con los datos de las jugadoras. 
+-Creacion de codigos de correlacion a traves del codigo CSV para poder detectar que estadisticas se toman mas en cuenta para el precio de mercado/valor de contrato
+-Creacion de graficas de los equipos para reflejar visualmente que tipo de jugadoras buscan los equipos de la WNBA para adquirir sus servicios
+-Creacion de una pagina web para visualizar los datos y leer las concluisones que se han llegado al observar la correlacion entre los contratos y las estadisticas de forma publica (https://powerrangers-wnbamarket.streamlit.app/)
 
 
 [Funcionalidades]  
