@@ -17,6 +17,10 @@ Matplotlib (pyplot)  ,  Seaborn  ,  Numpy
 Streamlit  ,  Pandas  ,  Requests  ,  io (BytesIO)  ,  PIL (Image)
 
 [Proceso]
+Recopilación de información: Extracción de datos de las jugadoras
+Procesamiento de datos: Filtracion de información.
+Creacion de codigo CSV para guardar la información con los datos de las jugadoras.
+
 
 [Funcionalidades]
 
