@@ -1,4 +1,4 @@
-WNBAmarket
+#WNBAmarket
 
 El presente proyecto se enfoca en el ámbito del baloncesto femenino de la WNBA, recopilando
 datos exhaustivos de las temporadas 2016-2024 directamente de las fuentes oficiales: Spotrac.com y Stats.wnba.com. Este conjunto de datos 
