@@ -31,6 +31,7 @@ Streamlit  ,  Pandas  ,  Requests  ,  io (BytesIO)  ,  PIL (Image)
 
 
 
-[Estado del Proyecto]
+[Estado del Proyecto]  
+FINALIZADO
 
 [Agradecimientos]
