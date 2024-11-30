@@ -24,11 +24,11 @@ Edad, Ranking del equipo al que pertenecen, Minutos en cancha, promedio de punto
 
 —Creacion de codigo CSV para guardar la información con los datos de las jugadoras. 
 
--Creacion de codigos de correlacion a traves del codigo CSV para poder detectar que estadisticas se toman mas en cuenta para el precio de mercado/valor de contrato
+—Creacion de codigos de correlacion a traves del codigo CSV para poder detectar que estadisticas se toman mas en cuenta para el precio de mercado/valor de contrato
 
--Creacion de graficas de los equipos para reflejar visualmente que tipo de jugadoras buscan los equipos de la WNBA para adquirir sus servicios
+—Creacion de graficas de los equipos para reflejar visualmente que tipo de jugadoras buscan los equipos de la WNBA para adquirir sus servicios
 
--Creacion de una pagina web para visualizar los datos y leer las concluisones que se han llegado al observar la correlacion entre los contratos y las estadisticas de forma publica (https://powerrangers-wnbamarket.streamlit.app/)
+—Creacion de una pagina web para visualizar los datos y leer las concluisones que se han llegado al observar la correlacion entre los contratos y las estadisticas de forma publica (https://powerrangers-wnbamarket.streamlit.app/)
 
 
 [Funcionalidades]  
