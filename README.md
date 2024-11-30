@@ -7,14 +7,14 @@ permitió realizar un análisis detallado de las jugadoras, sus estadísticas y 
 [Arquitectura]
 
 -Librerías de Scrapping:
-BeautifulSoup |  Selenium  |  Webdriver_manager.chrome  |   Schedule  |   Logging  |  CSV  |   Datetime. 
+BeautifulSoup ,  Selenium  ,  Webdriver_manager.chrome  ,   Schedule  ,   Logging  ,  CSV  ,   Datetime. 
 
 
 -Liberías de visualizacion de datos:
-Matplotlib (pyplot)  |  Seaborn  |  Numpy
+Matplotlib (pyplot)  ,  Seaborn  ,  Numpy
 
 -Librerías Generales: 
-Streamlit  |  Pandas  |  Requests  |  io (BytesIO)  |  PIL (Image)
+Streamlit  ,  Pandas  ,  Requests  ,  io (BytesIO)  ,  PIL (Image)
 
 [Proceso]
 
