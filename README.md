@@ -7,19 +7,13 @@ permitió realizar un análisis detallado de las jugadoras, sus estadísticas y 
 [Arquitectura]
 Librerías de Scrapping:
 
--BeautifulSoup: Biblioteca para analizar y extraer datos de documentos HTML y XML de manera sencilla.
-
--Selenium: Framework para automatizar navegadores web, permite interactuar con elementos dinámicos y simular acciones de usuario.
-
--Webdriver_manager.chrome: Herramienta para descargar y gestionar automáticamente el controlador de Chrome (Chrome Driver) necesario para Selenium.
-
--Schedule: Biblioteca para programar tareas a intervalos regulares o en horarios específicos.
-
--Logging: Módulo de la biblioteca estándar para registrar eventos y mensajes útiles para depuración.
-
--CSV: Módulo estándar para leer y escribir archivos CSV (valores separados por comas).
-
--Datetime: Biblioteca estándar para manejar fechas y horas, útil para formateo, cálculos y manipulación temporal.
+-BeautifulSoup:
+-Selenium: 
+-Webdriver_manager.chrome: 
+-Schedule: 
+-Logging: 
+-CSV: 
+-Datetime: 
 
 
 Liberías de visualizacion de datos:
