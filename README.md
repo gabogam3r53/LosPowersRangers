@@ -17,16 +17,16 @@ Matplotlib (pyplot)  ,  Seaborn  ,  Numpy
 Streamlit  ,  Pandas  ,  Requests  ,  io (BytesIO)  ,  PIL (Image)
 
 [Proceso]  
-Recopilación de información: Extracción de datos de las jugadoras  
-Procesamiento de datos: Filtracion de información.  
-Creacion de codigo CSV para guardar la información con los datos de las jugadoras.  
+—Recopilación de información: Extracción de datos de las jugadoras  
+—Procesamiento de datos: Filtracion de información.  
+—Creacion de codigo CSV para guardar la información con los datos de las jugadoras.  
 
 
 [Funcionalidades]  
--Realización de análisis comparativo de correlaciones entre estadísticas y valor de contrato en la WNBA.  
--Visualizacion gráfica de la relación entre las estadísticas individuales de las jugadoras de la WNBA y el valor de sus contratos.  
--Análisis de las correlaciones en los contratos de jugadoras de la WNBA a través de los años.  
--Descubrir regularidades en la forma en que se valoran a las jugadoras.  
+—Realización de análisis comparativo de correlaciones entre estadísticas y valor de contrato en la WNBA.  
+—Visualizacion gráfica de la relación entre las estadísticas individuales de las jugadoras de la WNBA y el valor de sus contratos.  
+—Análisis de las correlaciones en los contratos de jugadoras de la WNBA a través de los años.  
+—Descubrir regularidades en la forma en que se valoran a las jugadoras.  
 
 
 
